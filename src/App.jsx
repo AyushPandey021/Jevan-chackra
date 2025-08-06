@@ -8,7 +8,8 @@ import YouTubeGallery from './Components/YoutubeGallery'
 import ProductPage from './Components/ProductPage'
 import LamaFeraHealing from './Components/LamaFara'
 import Footer from './Components/Footer'
-
+import Numerology from "./Components/Numerology"
+import TarotConsultancy from "./Components/TarotConsultancy"
 // import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 
 
@@ -32,7 +33,8 @@ const App = () => {
     <Gallery/>
     <Card/>
 
-    
+    <Numerology/>
+    <TarotConsultancy/>
     <SushmitaAbbi/>
     <YouTubeGallery/>
     <ProductPage/>

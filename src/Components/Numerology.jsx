@@ -1,6 +1,6 @@
 import React from "react";
 
-const LamaFeraHealing = () => {
+const NumerologyServices = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");
     if (section) section.scrollIntoView({ behavior: "smooth" });
@@ -9,17 +9,18 @@ const LamaFeraHealing = () => {
     <div className="bg-gradient-to-b from-amber-100 to-white text-gray-800 p-6 md:p-12 font-sans">
       {/* session 01 */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-amber-900">Lama Fera Healing</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-amber-900">Numerology</h1>
         <p className="max-w-2xl mx-auto text-lg text-gray-700">
-          Lama Fera is a powerful spiritual healing technique rooted in the ancient
-          teachings of Tibetan Buddhism, designed to balance energy and promote holistic wellness.
+          Numerology is the study of numbers and their mystical significance. It can provide deep
+insights into various aspects of life by analyzing the numbers derived from your birth
+date and name.
         </p>
         <div className="mt-4 flex justify-center gap-4">
           <button className="bg-amber-700 text-white px-6 py-2 rounded-xl shadow-md hover:bg-amber-800 transition-all">
             Read More
           </button>
           <button className="border border-amber-700 text-amber-700 px-6 py-2 rounded-xl hover:bg-amber-700 hover:text-white transition-all" onClick={scrollToBooking}>
-            View Services
+            View Numerology Services
           </button>
         </div>
       </div>
@@ -31,21 +32,25 @@ const LamaFeraHealing = () => {
           className="rounded-xl shadow-lg"
         />
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">1. Origins and History</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800"> Numerology</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Rooted in ancient Tibetan Buddhist practices and teachings of Lamas.</li>
-            <li>Passed down from Lord Buddha to his disciples to support spiritual evolution.</li>
+             <p className="max-w-2xl mx-auto text-lg text-gray-700">
+                Numerology is the study of numbers and their mystical significance. 
+It can provide deep insights into various aspects of life by analyzing the numbers derived from your birth date and name.
+ Here’s how numerology can help you understand life:
+                </p>
           </ul>
         </div>
       </div>
       {/* session 03*/}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">2. Healing Technique</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800">1. Self-Awareness and Personal Growth</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Transfer of powerful energy from healer to recipient.</li>
-            <li>Performed in serene, meditative environments invoking Tibetan deities.</li>
-            <li>Use of sacred mantras and energy symbols by the practitioner.</li>
+            <li>Life Path Number: This number, calculated from your birth date, reveals your life’s purpose, challenges, and opportunities. It acts as a guide to your overall journey.</li>
+            <li>Expression/Destiny Number: Derived from your full name, it indicates your talents, abilities, and potential. It can help you understand your inherent strengths and how to best utilize them..</li>
+            <li>Soul Urge/Heart’s Desire Number: This number, calculated from the vowels in your full name, represents your inner desires, motivations, and what drives you at a soul level.</li>
+            <li>Personality Number: Derived from the consonants in your full name, it reveals how others perceive you and the first impression you make.</li>
           </ul>
         </div>
         <img
@@ -62,14 +67,14 @@ const LamaFeraHealing = () => {
           className="rounded-xl shadow-lg"
         />
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">3. Tools and Symbols</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800">2. Relationships and Compatibility</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Use of sacred Tibetan symbols with healing properties.</li>
-            <li>Chanting mantras to enhance spiritual energy and divine invocation.</li>
+            <li>Compatibility: By comparing your numerology chart with someone else’s, you can gain insights into how well you might get along, potential areas of conflict, and how to strengthen your relationship..</li>
+            <li>Understanding Dynamics: Knowing the core numbers of family members, friends, or partners can help you understand their motivations, challenges, and behaviors, fostering empathy and better communication.</li>
           </ul>
         </div>
       </div>
-      {/* session 05 */}
+      {/* session 05
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <div>
           <h2 className="text-2xl font-bold mb-2 text-amber-800">4. Benefits</h2>
@@ -85,7 +90,7 @@ const LamaFeraHealing = () => {
           alt="Benefits of Healing"
           className="rounded-xl shadow-lg"
         />
-      </div>
+      </div> */}
 
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
@@ -95,29 +100,27 @@ const LamaFeraHealing = () => {
         />
         {/* 10 rules */}
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">5. Sessions</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800">3. Career and Financial Guidance</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Recipient lies comfortably while healing is performed.</li>
-            <li>Session duration ranges from 30 to 60 minutes based on individual needs.</li>
+            <li>Career Path: Your numerology chart can highlight careers that align with your strengths and passions, helping you make fulfilling professional choices..</li>
+            <li>Financial Decisions: Numerology can offer guidance on when to take financial risks, invest, or save, based on your personal cycles and life path number..</li>
           </ul>
         </div>
       </div>
       <div className="prose max-w-none mx-auto mt-16">
-        <h2 className="text-2xl font-bold text-amber-800">Lama Fera Healing by Jevan Chakra</h2>
-        <p>
-          Distance Lama Fera healing offers several benefits almost similar to in-person sessions, leveraging the belief that energy is not bound by physical space or time.
-        </p>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">1. Accessibility</h3>
+        <h2 className="text-2xl font-bold text-amber-800">4. Life Cycles and Timing</h2>
+       <li>Personal Year Number: This number, which changes annually, indicates the themes and energies you’ll experience each year. It can help you plan and make decisions aligned with the prevailing energy.</li>
+       <li>Personal Month and Day Numbers: These provide more specific guidance on the energies at play each month and day, helping you make the most of short-term opportunities.</li>
+        <h3 className="text-xl font-semibold text-amber-700 mt-6">5. Problem Solving and Decision Making</h3>
         <ul className="list-disc list-inside">
-          <li>Allows individuals to receive healing regardless of their geographical location.</li>
-          <li>Ideal for those who are unable to travel or have mobility issues.</li>
+          <li>Clarity and Direction: Numerology can offer clarity when faced with difficult decisionsor challenges, providing a fresh perspective and potential solutions</li>
+          <li>Alignment with Life Path: By understanding your core numbers, you can makedecisions that align with your true self and long-term goals.</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">2. Convenience</h3>
+        <h3 className="text-xl font-semibold text-amber-700 mt-6">6. Spiritual Development</h3>
         <ul className="list-disc list-inside">
-          <li>Sessions can be scheduled at a mutually convenient time for both the practitioner and the recipient.</li>
-          <li>No need to physically visit a healer, saving time and effort.</li>
+          <li>Soul Purpose: Numerology can reveal your spiritual mission and the lessons you’re here to learn, guiding your spiritual growth and development.</li>
+          <li>Inner Peace: Understanding your core numbers can bring a sense of inner peace and acceptance, knowing you are on the right path and have the tools to navigate life’s challenges.</li>
         </ul>
 
         <h3 className="text-xl font-semibold text-amber-700 mt-6">3. Comfort</h3>
@@ -167,9 +170,8 @@ const LamaFeraHealing = () => {
           <li>Promotes overall well-being and health.</li>
         </ul>
 
-        <p className="mt-6">Distance Lama Fera healing is a versatile and powerful method that transcends physical limitations, offering a holistic approach to healing that addresses the mind, body, and spirit.
-          
-        </p>
+        <p className="mt-6">
+        By integrating numerology into your life, you can gain valuable insights, make more informed choices, and align yourself more closely with your true path and purpose.</p>
         {/* services */}
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">Services.</h1>
         <div id="booking-section" className="grid md:grid-cols-3 gap-8 mt-12">
@@ -215,4 +217,4 @@ const LamaFeraHealing = () => {
   );
 };
 
-export default LamaFeraHealing;
+export default NumerologyServices;

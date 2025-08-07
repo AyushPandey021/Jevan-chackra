@@ -1,55 +1,44 @@
-import React from 'react'
-import Gallery from './Components/Gallery'
-import Card from './Components/Card'
-import Pg02 from './Components/Pg02'
-import StatsCounter from './Components/StatsCounter'
-import SushmitaAbbi from './Components/SushmitaAbbi'
-import YouTubeGallery from './Components/YoutubeGallery'
-import ProductPage from './Components/ProductPage'
-import LamaFeraHealing from './Components/LamaFara'
-import Footer from './Components/Footer'
-import Numerology from "./Components/Numerology"
-import TarotConsultancy from "./Components/TarotConsultancy"
-import HumkaraWithHaleem from './Components/HumkaraWithHaleem'
-import SpecialSpiritualAndEnergyHealing from './Components/SpecialSpiritual&EnergyHealing'
-import AngelAndOracleCardReading from './Components/AngelAndOracleCardReading'
-import TherapyAngelhealing from "./Components/TherapyAngelhHealing"
-// import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import ProductPage from './Pages/ProductPage';
+import ServiceGalleryPage from './Pages/ServiceGalleryPage';
+import Navbar from './Pages/Navbar';
+import ScrollTop from "./Components/ScrollTop"
+import TarotConsultancy from './Components/TarotConsultancy';
+import NumerologyServices from './Components/Numerology';
+import LamaFeraHealing from './Components/LamaFara';
+import CartPage from './Components/CartPage';
+import CheckoutPage from './Components/CheckOutPage';
+import About from "./Components/About"
+import BlogList from "./Pages/BlogList"
+import BlogDetail from './Pages/BlogDetail';
 
-
-
-const App = () => {
+function App() {
   return (
-     
-    <div>
-      <div style={{ height: '100vh' }}>
-      <iframe
-        src="/HomeBg.html"
-        title="My Static HTML Page"
-        style={{ width: '100%', height: '100%', border: 'none' }}
-      />
-    </div>
-   
-  
-      <Pg02/>
-      <LamaFeraHealing/>
-           <StatsCounter/>
-    <Gallery/>
-    <Card/>
-    
-    <AngelAndOracleCardReading/>
-    <HumkaraWithHaleem/>
-    <SpecialSpiritualAndEnergyHealing/>
-    <TherapyAngelhealing/>
+    <>
 
-    <Numerology/>
-    <TarotConsultancy/>
-    <SushmitaAbbi/>
-    <YouTubeGallery/>
-    <ProductPage/>
-    <Footer/>
-    </div>
-  )
+      <Router>
+        <ScrollTop />
+        {/* <Navbar /> */}
+        <Navbar />
+        <Routes>
+
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<ProductPage />} />
+          <Route path="/ServiceGalleryPage" element={<ServiceGalleryPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/ToratConsultancy" element={<TarotConsultancy />} />
+          <Route path="/NumerologyServices" element={<NumerologyServices />} />
+          <Route path="/LamaFeraHealing" element={<LamaFeraHealing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          {/* <Route path="/LamaFeraHealing" element={<LamaFeraHealing />} /> */}
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
-export default App
+export default App;

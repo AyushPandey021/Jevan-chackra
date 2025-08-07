@@ -1,6 +1,6 @@
 import React from "react";
 
-const TarotConsultancy = () => {
+const  SpecialSpiritualAndEnergyHealing = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");
     if (section) section.scrollIntoView({ behavior: "smooth" });
@@ -9,16 +9,17 @@ const TarotConsultancy = () => {
     <div className="bg-gradient-to-b from-amber-100 to-white text-gray-800 p-6 md:p-12 font-sans">
       {/* session 01 */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-amber-900">Tarot Consultancy</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-amber-900"> Special Spiritual & Energy Healing</h1>
         <p className="max-w-2xl mx-auto text-lg text-gray-700">
-         Tarot Consultancy can be a useful tool for self-reflection and personal growth.
+       Spiritual healing encompasses a range of practices and beliefs aimed at enhancing well-being
+through the connection of mind, body, and spirit.
         </p>
         <div className="mt-4 flex justify-center gap-4">
           <button className="bg-amber-700 text-white px-6 py-2 rounded-xl shadow-md hover:bg-amber-800 transition-all">
             Read More
           </button>
           <button className="border border-amber-700 text-amber-700 px-6 py-2 rounded-xl hover:bg-amber-700 hover:text-white transition-all" onClick={scrollToBooking}>
-            View Tarot Consultancy Services
+         View  Special Spiritual & Energy Healing Services
           </button>
         </div>
       </div>
@@ -30,10 +31,11 @@ const TarotConsultancy = () => {
           className="rounded-xl shadow-lg"
         />
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800"> Tarot Consultancy</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800"> Special Spiritual & Energy Healing</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
              <p className="max-w-2xl mx-auto text-lg text-gray-700">
-                Tarot Consultancy can be a useful tool for self-reflection and personal growth. Here are some ways it might help:
+                Spiritual healing encompasses a range of practices and beliefs aimed at enhancing well-being
+                through the connection of mind, body, and spirit. Here are some potential benefits
                 </p>
           </ul>
         </div>
@@ -41,10 +43,11 @@ const TarotConsultancy = () => {
       {/* session 03*/}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">1. 1. Self-Reflection and Insight:</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800">1. Emotional Balance:</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-           <p>Tarot cards can help you gain insight into your thoughts, feelings, and behaviors. The symbolism in the cards can prompt you to think about aspects of your life you might not have considered.</p>
-          </ul>
+            <li>Helps to manage and reduce stress, anxiety, and depression.</li>
+            <li>Promotes feelings of peace, joy, and overall emotional well-being.</li>
+           </ul>
         </div>
         <img
           src="/images/technique.jpg"
@@ -60,18 +63,21 @@ const TarotConsultancy = () => {
           className="rounded-xl shadow-lg"
         />
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">2.Self-Reflection and Insight:</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800">2. Physical Health:</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-           <p>When faced with a difficult decision or a confusing situation, a tarot reading can provide clarity by highlighting important factors and potential outcomes.</p>
+            <li>Can lead to improvements in physical ailments and pain relief.</li>
+            <li>Boosts the immune system and enhances overall physical vitality.</li>
+            
           </ul>
         </div>
       </div>
       {/* session 05 */}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">3. Emotional Healing: </h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800">3. Mental Clarity: </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <p>Tarot readings can offer comfort and guidance during times of emotional distress. The process can help you understand and process your feelings, leading to healing and closure.</p>
+            <li>Aids in achieving mental clarity and focus.:</li>
+            <li>Encourages positive thinking and improved cognitive functions.</li>
           </ul>
         </div>
         <img
@@ -89,37 +95,60 @@ const TarotConsultancy = () => {
         />
         {/* 10 rules */}
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">4. Personal Empowerment:</h2>
+          <h2 className="text-2xl font-bold mb-2 text-amber-800">4. Enhanced Relationships:</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <p>Tarot can encourage you to take control of your life by revealing hidden strengths and opportunities. It can motivate you to take action and make positive changes.</p>          </ul>
+            <li>Fosters compassion, empathy, and understanding in relationships.</li>
+         
+           <li>Improves communication and reduces conflicts</li>     
+          
+                 </ul>
         </div>
       </div>
       <div className="prose max-w-none mx-auto mt-16">
-        <h2 className="text-2xl font-bold text-amber-800">5.  Creative Inspiration:</h2>
-        <p>The imagery and symbolism of tarot cards can spark creativity and offer new perspectives, which can be especially useful for artists, writers, and other creatives.</p>      
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">6. Spiritual Growth:</h3>
-        <ul className="list-disc list-inside">
-         <p>For those on a spiritual path, tarot can be a tool for connecting with deeper truths and exploring spiritual questions.</p>        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">7.Problem Solving:</h3>
-        <ul className="list-disc list-inside">
-        <p>Tarot can be used as a tool for brainstorming solutions to problems by exploring different angles and possibilities.</p>
-          </ul>
-
-         <h3 className="text-xl font-semibold text-amber-700 mt-6">8. Mindfulness and Intuition:</h3>
-        <ul className="list-disc list-inside">
-        <p>Regular tarot practice can help you develop mindfulness and strengthen your intuition, leading to greater self-awareness and inner peace..</p>
-          </ul>
-
-        <p className="mt-6">
-       While tarot can be a powerful tool, it’s important to remember that it’s not a substitute for professional advice, especially in areas like health, finance, or legal matters.</p>
+        <h2 className="text-2xl font-bold text-amber-800">5. Spiritual Growth:</h2>
+        <li>Deepens the connection to one’s spiritual beliefs and practices.</li>
+        <li>Promotes a sense of purpose and meaning in life.</li>     
+      
         
-        <p className="mt-6">
-       At Jevan Chakra, I (Sushmita Abbi) offer more than just tarot card readings. As a Spiritual and Energy Healer, I work with energies to address the challenges and hurdles in your life. I provide guidance through tarot cards, and I also incorporate Vastu, numerology, colors, mantras, deities, switchwords, and energy circles to enhance the healing process. I can identify which planets are affecting you, whether you are in a period of transition, breakthrough, or letting go, and if there are any pending vows, pitra dosh, or mangal dosh. I also assess which chakra might be blocked. During video call sessions, clients often report feeling healed and relaxed as I continuously send healing energies throughout the session.
-        </p>
+        <h3 className="text-xl font-semibold text-amber-700 mt-6">6. Stress Reduction:</h3>
+        <ul className="list-disc list-inside">
+          <li>Practices like meditation and mindfulness can significantly reduce stress levels.</li>
+          <li>Encourages relaxation and inner peace.</li>
+
+         </ul>
+
+        <h3 className="text-xl font-semibold text-amber-700 mt-6">7. Improved Coping Mechanisms:</h3>
+        <ul className="list-disc list-inside">
+          <li>Provides tools and practices for better handling life’s challenges and adversities.</li>
+          <li>Enhances resilience and adaptability.</li>
+         
+          </ul>
+
+         <h3 className="text-xl font-semibold text-amber-700 mt-6">8. Personal Empowerment:</h3>
+        <ul className="list-disc list-inside">
+          <li>Encourages self-discovery and personal growth.</li>
+        
+          <li>Helps in recognizing and tapping into one’s inner strengths and abilities.</li>
+         
+          </ul>
+
+           <h3 className="text-xl font-semibold text-amber-700 mt-6">9. Holistic Health:</h3>
+        <ul className="list-disc list-inside">
+           <li>Integrates physical, emotional, mental, and spiritual aspects for a balanced approach to health.</li>
+           <li>Encourages a holistic view of well-being.</li>
+          </ul>
+
+
+          <h3 className="text-xl font-semibold text-amber-700 mt-6">10. Release of Toxins:</h3>
+        <ul className="list-disc list-inside">
+           <li>Helps in the detoxification process by clearing energetic blockages.</li>
+           <li>Supports the body’s natural ability to eliminate toxins.</li>
+          </ul>
+
+
         
         {/* services */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">Tarot Consultancy</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">SPECIAL SPIRITUAL & ENERGY HEALING SERVICES</h1>
         <div id="booking-section" className="grid md:grid-cols-3 gap-8 mt-12">
 
           {[
@@ -163,4 +192,4 @@ const TarotConsultancy = () => {
   );
 };
 
-export default TarotConsultancy;
+export default SpecialSpiritualAndEnergyHealing;

@@ -10,6 +10,10 @@ import LamaFeraHealing from './Components/LamaFara'
 import Footer from './Components/Footer'
 import Numerology from "./Components/Numerology"
 import TarotConsultancy from "./Components/TarotConsultancy"
+import HumkaraWithHaleem from './Components/HumkaraWithHaleem'
+import SpecialSpiritualAndEnergyHealing from './Components/SpecialSpiritual&EnergyHealing'
+import AngelAndOracleCardReading from './Components/AngelAndOracleCardReading'
+import TherapyAngelhealing from "./Components/TherapyAngelhHealing"
 // import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 
 
@@ -32,6 +36,11 @@ const App = () => {
            <StatsCounter/>
     <Gallery/>
     <Card/>
+    
+    <AngelAndOracleCardReading/>
+    <HumkaraWithHaleem/>
+    <SpecialSpiritualAndEnergyHealing/>
+    <TherapyAngelhealing/>
 
     <Numerology/>
     <TarotConsultancy/>

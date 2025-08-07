@@ -123,57 +123,12 @@ It can provide deep insights into various aspects of life by analyzing the numbe
           <li>Inner Peace: Understanding your core numbers can bring a sense of inner peace and acceptance, knowing you are on the right path and have the tools to navigate life’s challenges.</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">3. Comfort</h3>
-        <ul className="list-disc list-inside">
-          <li>Recipients can receive healing in the comfort of their own home or any familiar environment.</li>
-          <li>Reduces anxiety or stress associated with traveling to a new place.</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">4. Enhanced Focus</h3>
-        <ul className="list-disc list-inside">
-          <li>Both the healer and the recipient can focus better without the distractions of a physical environment.</li>
-          <li>The recipient can relax more deeply, potentially enhancing the effectiveness of the session.</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">5. Flexibility</h3>
-        <ul className="list-disc list-inside">
-          <li>Suitable for people with busy schedules or those in different time zones.</li>
-          <li>Easier to fit into daily routines without significant disruption.</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">6. Safety</h3>
-        <ul className="list-disc list-inside">
-          <li>Particularly beneficial during times when in-person meetings are not feasible due to health concerns.</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">7. Energetic Connection</h3>
-        <ul className="list-disc list-inside">
-          <li>The belief that energy can be transmitted over any distance, maintaining the potency and effectiveness of the healing.</li>
-          <li>The connection between the healer and the recipient is based on intention and focused energy.</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">8. Emotional and Mental Benefits</h3>
-        <ul className="list-disc list-inside">
-          <li>Can help reduce stress, anxiety, and emotional blockages.</li>
-          <li>Promotes mental clarity, peace, and emotional balance.</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">9. Spiritual Growth</h3>
-        <ul className="list-disc list-inside">
-          <li>Assists in clearing negative energy and enhancing spiritual awareness and growth.</li>
-          <li>Supports the recipient’s journey towards higher consciousness and spiritual development.</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold text-amber-700 mt-6">10. Physical Healing</h3>
-        <ul className="list-disc list-inside">
-          <li>Aids in the alleviation of physical ailments and discomfort.</li>
-          <li>Promotes overall well-being and health.</li>
-        </ul>
+       
 
         <p className="mt-6">
         By integrating numerology into your life, you can gain valuable insights, make more informed choices, and align yourself more closely with your true path and purpose.</p>
         {/* services */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">Services.</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">Numerology</h1>
         <div id="booking-section" className="grid md:grid-cols-3 gap-8 mt-12">
 
           {[

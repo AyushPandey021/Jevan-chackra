@@ -171,7 +171,7 @@ const LamaFeraHealing = () => {
           
         </p>
         {/* services */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">Services.</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">Lama Fera Healing</h1>
         <div id="booking-section" className="grid md:grid-cols-3 gap-8 mt-12">
 
           {[

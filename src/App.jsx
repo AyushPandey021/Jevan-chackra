@@ -12,7 +12,7 @@ import CheckoutPage from './Components/CheckOutPage';
 import About from "./Components/About"
 import BlogList from "./Pages/BlogList"
 import BlogDetail from './Pages/BlogDetail';
-
+import EmotionalFreedomTechniques from'./Components/EmotionalFreedomTechniques';
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
         <ScrollTop />
         {/* <Navbar /> */}
         <Navbar />
+        <EmotionalFreedomTechniques/>
         <Routes>
 
           <Route path="/" element={<Home />} />

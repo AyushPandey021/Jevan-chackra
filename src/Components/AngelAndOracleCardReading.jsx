@@ -151,7 +151,7 @@ const AngelAndOracleCardReading = () => {
         </ul>
 
         {/* services */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">ANGEL AND ORACLE CARD READING</h1>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">Angel and  Oracle Card Reading Service</h2>
         <div id="booking-section" className="grid md:grid-cols-3 gap-8 mt-12">
 
           {[

@@ -12,6 +12,7 @@ import About from "./Components/About";
 import BlogList from "./Pages/BlogList";
 import Services from './Pages/Services';
 import BlogDetail from './Pages/BlogDetail';
+
 import Contact from './Pages/Contact';
 import ProductDetails from './Pages/ProductDetails';
 import HumkaraHeleem from './Pages/HumkaraHeleem';
@@ -23,7 +24,7 @@ import Booking from './Components/Booking';
 import Footer from './Components/Footer';
 
 function App() {
-return (
+  return (
     <div className="bg-[#EAC3D0] text-[#973C00]">
       <ScrollTop />
       <Navbar />
@@ -49,8 +50,41 @@ return (
         <Route path="/booking-appointment" element={<Booking />} />
       </Routes>
       <Footer />
-    </div>
-  );
-}
 
+    </div>
+  )
+}
 export default App;
+
+// import EmotionalFreedomTechniques from'./Components/EmotionalFreedomTechniques';
+// function App() {
+//   return (
+//     <>
+
+//       <Router>
+//         <ScrollTop />
+//         {/* <Navbar /> */}
+//         <Navbar />
+//         <EmotionalFreedomTechniques/>
+//         <Routes>
+
+//           <Route path="/" element={<Home />} />
+//           <Route path="/products" element={<ProductPage />} />
+//           <Route path="/ServiceGalleryPage" element={<ServiceGalleryPage />} />
+//           <Route path="/cart" element={<CartPage />} />
+//           <Route path="/checkout" element={<CheckoutPage />} />
+//           <Route path="/ToratConsultancy" element={<TarotConsultancy />} />
+//           <Route path="/NumerologyServices" element={<NumerologyServices />} />
+//           <Route path="/LamaFeraHealing" element={<LamaFeraHealing />} />
+//           <Route path="/about" element={<About />} />
+//           <Route path="/blog" element={<BlogList />} />
+//           <Route path="/blog/:id" element={<BlogDetail />} />
+//           {/* <Route path="/LamaFeraHealing" element={<LamaFeraHealing />} /> */}
+//         </Routes>
+//       </Router>
+//     </>
+// >>>>>>> fd82925441a03cf7d4a5ebae8371de5596299ba6
+//   );
+// }
+
+// export default App;

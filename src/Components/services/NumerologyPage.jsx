@@ -1,5 +1,5 @@
 import React from 'react'
-import Numerology from '../Components/Numerology'
+import Numerology from '../Numerology'
 
 const Numerology = () => {
   return (

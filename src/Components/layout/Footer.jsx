@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import {
   FaFacebookF,

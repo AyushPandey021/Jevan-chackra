@@ -1,8 +1,9 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
-import ProductPage from './Pages/ProductPage';
-import Navbar from './Pages/Navbar';
-import ScrollTop from "./Components/ScrollTop";
+import ProductPage from './Pages/products/ProductPage.jsx';
+import Navbar from './Components/layout/Navbar.jsx';
+import ScrollTop from "./Components/layout/ScrollTop.jsx";
 import TarotConsultancy from './Components/TarotConsultancy';
 import NumerologyServices from './Components/Numerology';
 import LamaFeraHealing from './Components/LamaFara';
@@ -11,17 +12,16 @@ import CheckoutPage from './Components/CheckOutPage';
 import About from "./Components/About";
 import BlogList from "./Pages/BlogList";
 import Services from './Pages/Services';
-import BlogDetail from './Pages/BlogDetail';
-
+import BlogDetail from './Pages/blog/BlogDetail.jsx';
 import Contact from './Pages/Contact';
-import ProductDetails from './Pages/ProductDetails';
-import HumkaraHeleem from './Pages/HumkaraHeleem';
-import TherapyAngelHealing from './Components/TherapyAngelhHealing';
-import SpecialSpiritualAndEnergyHealing from './Components/SpecialSpiritual&EnergyHealing.jsx';
-import AngelAndOracleCardReading from './Components/AngelAndOracleCardReading';
-import EmotionalFreedomTechniques from './Pages/EmotionalFreedomTechniques';
-import Booking from './Components/Booking';
-import Footer from './Components/Footer';
+import ProductDetails from './Pages/products/ProductDetails.jsx';
+import HumkaraHeleem from './Components/services/HumkaraHeleem.jsx';
+import TherapyAngelHealing from './Components/services/TherapyAngelhHealing.jsx';
+import SpecialSpiritualAndEnergyHealing from './Components/services/SpecialSpiritual&EnergyHealing.jsx';
+import AngelAndOracleCardReading from './Components/services/AngelAndOracleCardReading.jsx';
+import EmotionalFreedomTechniques from './Components/services/EmotionalFreedomTechniques.jsx';
+import Booking from './Components/booking/Booking.jsx';
+import Footer from './Components/layout/Footer.jsx';
 
 function App() {
   return (
@@ -61,9 +61,10 @@ export default App;
 //   return (
 //     <>
 
+
 //       <Router>
 //         <ScrollTop />
-//         {/* <Navbar /> */}
+//
 //         <Navbar />
 //         <EmotionalFreedomTechniques/>
 //         <Routes>
@@ -83,7 +84,7 @@ export default App;
 //         </Routes>
 //       </Router>
 //     </>
-// >>>>>>> fd82925441a03cf7d4a5ebae8371de5596299ba6
+
 //   );
 // }
 

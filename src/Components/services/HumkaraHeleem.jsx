@@ -1,9 +1,9 @@
 import React from 'react'
-import HumkaraWithHaleem from '../Components/HumkaraWithHaleem'
+import HumkaraWithHaleem from './HumkaraWithHaleem'
 const HumkaraHeleem = () => {
   return (
     <div>
-      <HumkaraWithHaleem/>
+      <HumkaraWithHaleem />
     </div>
   )
 }

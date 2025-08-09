@@ -1,11 +1,11 @@
 import React from 'react'
 import Pg02 from '../Components/Pg02'
-import StatsCounter from '../Components/StatsCounter'
-import Gallery from '../Components/Gallery'
-import Card from '../Components/Card'
+import StatsCounter from '../Components/ui/StatsCounter'
+import Gallery from '../Components/ui/Gallery'
+import Card from '../Components/ui/ProductsCard'
 import SushmitaAbbi from '../Components/SushmitaAbbi'
-import Youtube from '../Components/YoutubeGallery'
-import TestimonialMarquee from '../Components/TestimonialMarquee'
+import Youtube from '../Components/ui/YoutubeGallery'
+import TestimonialMarquee from '../Components/ui/TestimonialMarquee'
 
 const Home = () => {
   return (
@@ -25,7 +25,7 @@ const Home = () => {
 
       <SushmitaAbbi />
       <Youtube />
-<TestimonialMarquee/>
+      <TestimonialMarquee />
 
 
     </div>

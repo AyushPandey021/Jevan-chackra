@@ -1,5 +1,5 @@
 import React from 'react'
-import TarotConsultancy from "../Components/TarotConsultancy"
+import TarotConsultancy from "../TarotConsultancy"
 const TarotConsultancyPage = () => {
   return (
 <TarotConsultancy/>

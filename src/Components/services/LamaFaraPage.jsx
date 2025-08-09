@@ -1,5 +1,5 @@
 import React from 'react'
-import LamaFara from '../Components/LamaFara'
+import LamaFara from '../LamaFara'
 
 const LamaFara = () => {
   return (

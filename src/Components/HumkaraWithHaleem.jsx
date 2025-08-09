@@ -1,5 +1,9 @@
 import React from "react";
+import img2 from "../assets/hil1.png"
 
+
+import img3 from "../assets/hil2.png"
+import img1 from "../assets/humkara-heelam.png"
 const HumkaraWithHaleem = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");
@@ -28,7 +32,7 @@ const HumkaraWithHaleem = () => {
       {/* session 02 */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <img
-          src="/images/healing1.jpg"
+          src={img1}
           alt="Healing Session"
           className="rounded-xl shadow-lg"
         />
@@ -55,17 +59,30 @@ const HumkaraWithHaleem = () => {
       
       {/* session 03*/}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
-        <div>
-          <h2 className="text-2xl font-bold mb-2 text-amber-800">Benefits of Humkara with Haleem:</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <b>1. BRAHMA NADI Activation:<p>Opens the higher channels of the subtle body.</p></b>
-          <b>2. Clears Vishuddhi Chakra Blockages:<p> Provides wisdom to access different dimensions and enhances intuition, aiding in financial abundance.</p></b>
-          <b>3. Mental Capacity Enhancement:<p>Suitable for individuals aged 5 to 80, accelerating their performance in mental, emotional, and spiritual tasks.</p></b> 
-          <b>4. Productivity Boost:<p>Beneficial for judicial professionals, students, officials, IT workers, researchers, BPO employees, and personnel in the IPS, IAS, management, and marketing sectors.</p></b>
-          </ul>
-        </div>
+     <div>
+  <h2 className="text-2xl font-bold mb-4 text-amber-800">Benefits of Humkara with Haleem:</h2>
+  <ul className="list-disc list-inside space-y-4 text-gray-700">
+    <li>
+      <strong>BRAHMA NADI Activation:</strong>
+      <p>Opens the higher channels of the subtle body.</p>
+    </li>
+    <li>
+      <strong>Clears Vishuddhi Chakra Blockages:</strong>
+      <p>Provides wisdom to access different dimensions and enhances intuition, aiding in financial abundance.</p>
+    </li>
+    <li>
+      <strong>Mental Capacity Enhancement:</strong>
+      <p>Suitable for individuals aged 5 to 80, accelerating their performance in mental, emotional, and spiritual tasks.</p>
+    </li>
+    <li>
+      <strong>Productivity Boost:</strong>
+      <p>Beneficial for judicial professionals, students, officials, IT workers, researchers, BPO employees, and personnel in the IPS, IAS, management, and marketing sectors.</p>
+    </li>
+  </ul>
+</div>
+
         <img
-          src="/images/technique.jpg"
+          src={img2}
           alt="Healing Technique"
           className="rounded-xl shadow-lg"
         />
@@ -78,7 +95,7 @@ const HumkaraWithHaleem = () => {
       {/* session 04 */}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/symbols.jpg"
+          src={img3}
           alt="Symbols and Mantras"
           className="rounded-xl shadow-lg"
         />

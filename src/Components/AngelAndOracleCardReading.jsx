@@ -1,7 +1,10 @@
 import React from "react";
+// import img1 from "../assets/Angelanorecle/1.png"
 
-const  AngelAndOracleCardReadingy = () => {
-const scrollToBooking = () => {
+
+
+const AngelAndOracleCardReading = () => {
+  const scrollToBooking = () => {
     const section = document.getElementById("booking-section");
     if (section) section.scrollIntoView({ behavior: "smooth" });
   };
@@ -11,15 +14,15 @@ const scrollToBooking = () => {
       <div className="text-center mb-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-amber-900">ANGEL AND ORACLE CARD READING</h1>
         <p className="max-w-2xl mx-auto text-lg text-gray-700">
-        Angel and oracle card readings helps an individual in various ways, like: offering insights, guidance, and
-emotional support.
+          Angel and oracle card readings helps an individual in various ways, like: offering insights, guidance, and
+          emotional support.
         </p>
         <div className="mt-4 flex justify-center gap-4">
           <button className="bg-amber-700 text-white px-6 py-2 rounded-xl shadow-md hover:bg-amber-800 transition-all">
             Read More
           </button>
           <button className="border border-amber-700 text-amber-700 px-6 py-2 rounded-xl hover:bg-amber-700 hover:text-white transition-all" onClick={scrollToBooking}>
-         View Angel and Oracle Card reading Services
+            View Angel and Oracle Card reading Services
           </button>
         </div>
       </div>
@@ -33,9 +36,9 @@ emotional support.
         <div>
           <h2 className="text-2xl font-bold mb-2 text-amber-800"> ANGEL AND ORACLE CARD READING</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-             <p className="max-w-2xl mx-auto text-lg text-gray-700">
-                Angel and oracle card readings helps an individual in various ways, like: offering insights, guidance, and emotional support.
-                </p>
+            <p className="max-w-2xl mx-auto text-lg text-gray-700">
+              Angel and oracle card readings helps an individual in various ways, like: offering insights, guidance, and emotional support.
+            </p>
           </ul>
         </div>
       </div>
@@ -45,9 +48,9 @@ emotional support.
           <h2 className="text-2xl font-bold mb-2 text-amber-800">1. Providing Clarity and Insight:</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>Personal Situations:</li>
-           <p>Angel and oracle cards can provide clarity on personal situations, helping individuals see their circumstances from a new perspective.</p>
+            <p>Angel and oracle cards can provide clarity on personal situations, helping individuals see their circumstances from a new perspective.</p>
             <li>Decision Making:</li>
-           <p>The guidance from these readings can assist in making informed decisions by highlighting potential outcomes and considerations.</p>
+            <p>The guidance from these readings can assist in making informed decisions by highlighting potential outcomes and considerations.</p>
           </ul>
         </div>
         <img
@@ -67,7 +70,7 @@ emotional support.
           <h2 className="text-2xl font-bold mb-2 text-amber-800">2.Emotional Healing and Support:</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>Comfort and Reassurance:</li>
-           <p>The messages from the cards often offer comfort and reassurance during difficult times, providing a sense of peace and hope.</p>
+            <p>The messages from the cards often offer comfort and reassurance during difficult times, providing a sense of peace and hope.</p>
             <li>Healing Guidance:</li>
             <p>Readings can suggest ways to heal emotional wounds, encouraging self-care and self-compassion.</p>
           </ul>
@@ -102,51 +105,51 @@ emotional support.
           <h2 className="text-2xl font-bold mb-2 text-amber-800">4. Self-Reflection and Awareness</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>Introspection:</li>
-          <p>The cards can prompt self-reflection, helping individuals understand their feelings, behaviors, and motivations better.</p>  
-           <li>Inner Wisdom:</li>     
-           <p>They often guide individuals to tap into their inner wisdom and intuition, fostering greater self-awareness.</p>
-                 </ul>
+            <p>The cards can prompt self-reflection, helping individuals understand their feelings, behaviors, and motivations better.</p>
+            <li>Inner Wisdom:</li>
+            <p>They often guide individuals to tap into their inner wisdom and intuition, fostering greater self-awareness.</p>
+          </ul>
         </div>
       </div>
       <div className="prose max-w-none mx-auto mt-16">
         <h2 className="text-2xl font-bold text-amber-800">5. Positive Affirmations</h2>
         <li>Encouragement:</li>
         <p>he messages in angel and oracle cards are usually positive and uplifting, offering encouragement and affirmations that boost morale.</p>
-        <li>Empowerment:</li>     
-        <p>They can empower individuals to take positive actions and believe in their own abilities.</p> 
-        
+        <li>Empowerment:</li>
+        <p>They can empower individuals to take positive actions and believe in their own abilities.</p>
+
         <h3 className="text-xl font-semibold text-amber-700 mt-6">6. Guidance on Relationships</h3>
         <ul className="list-disc list-inside">
           <li>Interpersonal Dynamics:</li>
-         <p>Readings can provide insights into relationships, helping individuals understand and improve their interactions with others.</p>
-         <li>Conflict Resolution:</li>
-         <p>They can offer advice on resolving conflicts and enhancing communication within relationships</p>
-         
-         </ul>
+          <p>Readings can provide insights into relationships, helping individuals understand and improve their interactions with others.</p>
+          <li>Conflict Resolution:</li>
+          <p>They can offer advice on resolving conflicts and enhancing communication within relationships</p>
+
+        </ul>
 
         <h3 className="text-xl font-semibold text-amber-700 mt-6">7. Future Insights</h3>
         <ul className="list-disc list-inside">
           <li>Potential Outcomes:</li>
-        <p>While not predictive in the same way as fortune-telling, angel and oracle cards can suggest potential outcomes based on current energies, helping individuals prepare for possible future scenarios..</p>
+          <p>While not predictive in the same way as fortune-telling, angel and oracle cards can suggest potential outcomes based on current energies, helping individuals prepare for possible future scenarios..</p>
           <li>Navigating Challenges:</li>
           <p>They can offer strategies for navigating upcoming challenges or changes.</p>
-          </ul>
+        </ul>
 
-         <h3 className="text-xl font-semibold text-amber-700 mt-6">8. Personal Empowerment</h3>
+        <h3 className="text-xl font-semibold text-amber-700 mt-6">8. Personal Empowerment</h3>
         <ul className="list-disc list-inside">
           <li>Encouragement:</li>
-        <p>Angel and oracle cards can boost confidence and encourage individuals to trust themselves and their journe</p>
+          <p>Angel and oracle cards can boost confidence and encourage individuals to trust themselves and their journe</p>
           <li>Motivation:</li>
           <p>The guidance can inspire and motivate individuals to pursue their goals and dreams with renewed vigor.</p>
-          </ul>
+        </ul>
 
-           <h2 className="text-xl font-semibold text-amber-700 mt-6">Conclusion</h2>
+        <h2 className="text-xl font-semibold text-amber-700 mt-6">Conclusion</h2>
         <ul className="list-disc list-inside">
 
-        <p className="mt-6">
-          Angel and oracle card readings can serve as valuable tools for guidance, healing, and empowerment. They offer a gentle, supportive approach to personal and spiritual development, helping individuals navigate their lives with greater clarity and confidence.</p>
+          <p className="mt-6">
+            Angel and oracle card readings can serve as valuable tools for guidance, healing, and empowerment. They offer a gentle, supportive approach to personal and spiritual development, helping individuals navigate their lives with greater clarity and confidence.</p>
         </ul>
-        
+
         {/* services */}
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">ANGEL AND ORACLE CARD READING</h1>
         <div id="booking-section" className="grid md:grid-cols-3 gap-8 mt-12">

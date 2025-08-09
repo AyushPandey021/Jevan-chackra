@@ -1,5 +1,8 @@
 import React from "react";
-
+import Front from "../assets/Tfront.png"
+import    t1 from "../assets/T1.jpg"
+import t2 from "../assets/T2.png"
+import t3 from "../assets/T3.jpg"
 const   TherapyAngelHealing = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");
@@ -25,7 +28,7 @@ const   TherapyAngelHealing = () => {
       {/* session 02 */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <img
-          src="/images/healing1.jpg"
+          src={Front}
           alt="Healing Session"
           className="rounded-xl shadow-lg"
         />
@@ -52,7 +55,7 @@ const   TherapyAngelHealing = () => {
           </ul>
         </div>
         <img
-          src="/images/technique.jpg"
+          src={t1}
           alt="Healing Technique"
           className="rounded-xl shadow-lg"
         />
@@ -86,7 +89,7 @@ const   TherapyAngelHealing = () => {
           </ul>
         </div>
         <img
-          src="/images/benefits.jpg"
+          src={t2}
           alt="Benefits of Healing"
           className="rounded-xl shadow-lg"
         />
@@ -94,7 +97,7 @@ const   TherapyAngelHealing = () => {
 
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/session.jpg"
+          src={t3}
           alt="Healing Session Image"
           className="rounded-xl shadow-lg"
         />

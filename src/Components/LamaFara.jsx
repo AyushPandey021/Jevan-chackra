@@ -1,4 +1,10 @@
 import React from "react";
+import la1 from "../assets/LA1.png"
+
+import la2 from "../assets/LA2.png"
+import la3 from "../assets/LA3.png"
+import la4 from "../assets/LA4.png"
+
 
 const LamaFeraHealing = () => {
   const scrollToBooking = () => {
@@ -26,7 +32,7 @@ const LamaFeraHealing = () => {
       {/* session 02 */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <img
-          src="/images/healing1.jpg"
+          src={la1}
           alt="Healing Session"
           className="rounded-xl shadow-lg"
         />
@@ -49,7 +55,7 @@ const LamaFeraHealing = () => {
           </ul>
         </div>
         <img
-          src="/images/technique.jpg"
+          src={la2}
           alt="Healing Technique"
           className="rounded-xl shadow-lg"
         />
@@ -57,7 +63,7 @@ const LamaFeraHealing = () => {
       {/* session 04 */}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/symbols.jpg"
+          src={la3}
           alt="Symbols and Mantras"
           className="rounded-xl shadow-lg"
         />
@@ -81,7 +87,7 @@ const LamaFeraHealing = () => {
           </ul>
         </div>
         <img
-          src="/images/benefits.jpg"
+          src={la4}
           alt="Benefits of Healing"
           className="rounded-xl shadow-lg"
         />
@@ -89,7 +95,7 @@ const LamaFeraHealing = () => {
 
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/session.jpg"
+          src={la1}
           alt="Healing Session Image"
           className="rounded-xl shadow-lg"
         />

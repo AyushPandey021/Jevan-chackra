@@ -1,91 +1,67 @@
-import React, { useState } from 'react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useCart } from "../Pages/CartContext";
 
-// Utility to generate random products
-const generateRandomProducts = (count) => {
-  const titles = [
-    'Abundance Rakhi',
-    'Protection Rakhi',
-    'Energy Shield Rakhi',
-    'Love Bond Rakhi',
-    'Wealth Attractor Rakhi',
-    'Peace & Harmony Rakhi',
-    'Health Booster Rakhi',
-    'Jealousy Guard Rakhi',
-    'Triple Power Rakhi',
-    'Divine Connection Rakhi',
-  ];
+export default function ProductCard({ product }) {
+  const navigate = useNavigate();
+  const { addToCart } = useCart(); // Cart ka function le rahe
 
-  return Array.from({ length: count }, (_, index) => {
-    const title = titles[Math.floor(Math.random() * titles.length)];
-    const originalPrice = Math.floor(Math.random() * 200 + 200); // ₹200 - ₹400
-    const price = originalPrice - Math.floor(Math.random() * 100); // ₹100 less max
-    return {
-      id: index + 1,
-      title,
-      image: `https://source.unsplash.com/300x300/?rakhi,${index}`, // random rakhi image
-      price,
-      originalPrice,
-    };
-  });
-};
+  if (!product) return null;
 
-const allProducts = generateRandomProducts(20);
-
-const ProductCard = () => {
-  const [visibleCount, setVisibleCount] = useState(4);
-
-  const handleViewMore = () => {
-    setVisibleCount((prev) => prev + 4);
+  const handleViewDetails = () => {
+    navigate(`/product/${product.id}`);
   };
 
-  const visibleProducts = allProducts.slice(0, visibleCount);
+  const handleBuyNow = (e) => {
+    e.stopPropagation();
+    navigate(`/checkout/${product.id}`);
+  };
+
+  const handleAddToCart = (e) => {
+    e.stopPropagation();
+    addToCart(product);
+  };
 
   return (
-    <div className="p-6">
-      
-         <h1 className="text-6xl md:text-5xl font-bold text-center text-red-900 mb-8 font-[Montserrat]">
-      Our Products
-        {/* <span className="block text-lg mt-2 text-gray-600">
-          Flexbox Fallback (via Tailwind)
-        </span> */}
-      </h1>
+    <motion.div
+      className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition"
+      whileHover={{ scale: 1.02 }}
+      onClick={handleViewDetails}
+    >
+      <img
+        src={product.images?.[0] || "https://via.placeholder.com/150"}
+        alt={product.title || "No Title"}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-4">
+        <h2 className="text-lg font-semibold truncate">{product.title}</h2>
+        <p className="text-sm text-gray-500">{product.tag}</p>
 
-      <h1>We Provides Some Product</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {visibleProducts.map((product) => (
-          <div
-            key={product.id}
-            className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:shadow-xl transition duration-300"
-          >
-            <img
-              src={product.image}
-              alt={product.title}
-              className="w-full h-56 object-cover rounded mb-4"
-            />
-            <h3 className="text-lg font-semibold text-center mb-2">{product.title}</h3>
-            <div className="text-center">
-              <span className="text-gray-400 line-through mr-2">₹{product.originalPrice}</span>
-              <span className="text-red-600 font-bold text-lg">₹{product.price}</span>
-            </div>
-            <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">
-              ADD TO CART
-            </button>
-          </div>
-        ))}
-      </div>
+        <div className="mt-2 flex items-center gap-2">
+          {product.originalPrice && (
+            <span className="text-gray-400 line-through">₹{product.originalPrice}</span>
+          )}
+          {product.price && (
+            <span className="text-red-600 font-bold">₹{product.price}</span>
+          )}
+        </div>
 
-      {visibleCount < allProducts.length && (
-        <div className="flex justify-center mt-10">
+        <div className="mt-4 flex gap-2">
           <button
-            onClick={handleViewMore}
-            className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition"
+            onClick={handleAddToCart}
+            className="flex-1 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-1 px-2 rounded-lg transition"
           >
-            View More
+            Add to Cart
+          </button>
+          <button
+            onClick={handleBuyNow}
+            className="flex-1 bg-red-500 hover:bg-red-600 text-white font-semibold py-1 px-2 rounded-lg transition"
+          >
+            Buy Now
           </button>
         </div>
-      )}
-    </div>
+      </div>
+    </motion.div>
   );
-};
-
-export default ProductCard;
+}

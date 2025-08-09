@@ -1,5 +1,9 @@
 import React from "react";
-
+import SPfront from "../assets/SPfront.png"
+import SP1 from "../assets/SP1.png"
+import SP2 from "../assets/SP2.png"
+import SP3 from "../assets/SP3.png"
+import SP4 from "../assets/SP4.png"
 const  SpecialSpiritualAndEnergyHealing = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");
@@ -26,7 +30,7 @@ through the connection of mind, body, and spirit.
       {/* session 02 */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <img
-          src="/images/healing1.jpg"
+          src={SPfront}
           alt="Healing Session"
           className="rounded-xl shadow-lg"
         />
@@ -50,7 +54,7 @@ through the connection of mind, body, and spirit.
            </ul>
         </div>
         <img
-          src="/images/technique.jpg"
+          src={SP1}
           alt="Healing Technique"
           className="rounded-xl shadow-lg"
         />
@@ -58,7 +62,7 @@ through the connection of mind, body, and spirit.
       {/* session 04 */}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/symbols.jpg"
+          src={SP2}
           alt="Symbols and Mantras"
           className="rounded-xl shadow-lg"
         />
@@ -81,7 +85,7 @@ through the connection of mind, body, and spirit.
           </ul>
         </div>
         <img
-          src="/images/benefits.jpg"
+          src={SP3}
           alt="Benefits of Healing"
           className="rounded-xl shadow-lg"
         />
@@ -89,7 +93,7 @@ through the connection of mind, body, and spirit.
 
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/session.jpg"
+          src={SP4}
           alt="Healing Session Image"
           className="rounded-xl shadow-lg"
         />

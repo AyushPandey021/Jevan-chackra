@@ -5,10 +5,11 @@ import Gallery from '../Components/Gallery'
 import Card from '../Components/Card'
 import SushmitaAbbi from '../Components/SushmitaAbbi'
 import Youtube from '../Components/YoutubeGallery'
+import TestimonialMarquee from '../Components/TestimonialMarquee'
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-[#EAC3D0]'>
       <div style={{ height: '100vh' }}>
         <iframe
           src="/HomeBg.html"
@@ -24,6 +25,7 @@ const Home = () => {
 
       <SushmitaAbbi />
       <Youtube />
+<TestimonialMarquee/>
 
 
     </div>

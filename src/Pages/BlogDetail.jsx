@@ -6,19 +6,19 @@ const dummyBlogs = [
     id: '1',
     title: 'Unlocking Chakras: Energy Within',
     content: `Chakras are the seven energy points in your body...`,
-    image: 'https://source.unsplash.com/600x400/?meditation,chakra',
+    image: 'https://i.pinimg.com/736x/60/0b/03/600b036c80a17130ffa80001785dafff.jpg',
   },
   {
     id: '2',
     title: 'The Magic of Angel Cards',
-    content: `Angel cards are used to seek guidance from divine forces...`,
-    image: 'https://source.unsplash.com/600x400/?angel,spiritual',
+    content: `Angel cards are a beautiful tool for seeking guidance, clarity, and inspiration from divine forces. Unlike traditional tarot cards, they carry uplifting and positive messages, offering gentle wisdom to help you navigate life’s challenges. Each card is believed to connect you with the loving energy of angels, providing insight into your current situation and encouraging you to trust your inner voice. Whether you’re seeking answers, reassurance, or simply a moment of peace, angel cards can serve as a spiritual bridge between you and the higher realms, bringing comfort and light to your journey..`,
+    image: 'https://i.pinimg.com/1200x/8d/e7/f1/8de7f1b7e22ea7eefbc49ae6e746f1f1.jpg',
   },
   {
     id: '3',
     title: 'Healing with Switch Words',
     content: `Switch words are chosen words believed to connect...`,
-    image: 'https://source.unsplash.com/600x400/?healing,energy',
+    image: 'https://i.pinimg.com/736x/5f/23/f4/5f23f4c85ecbad891e1a600e15cf7631.jpg',
   },
 ];
 

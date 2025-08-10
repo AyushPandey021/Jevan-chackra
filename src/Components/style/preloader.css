@@ -32,8 +32,8 @@
 
 /* Logo pulse glow */
 .logo {
-  width: 380px;
-  height: 380px;
+  width: 480px;
+  height: 480px;
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -42,10 +42,12 @@
 
 /* Text style */
 .chakra-text {
-  margin-top: 150px;
-  font-size: 29px;
-  font-family: 'Cinzel Decorative', cursive;
+  margin-top: 140px;
+  font-size: 42px;
+  width: 100vw;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  text-align: center    ;
   color: #ffcc88;
   text-shadow: 0 0 10px #ffcc88, 0 0 20px #ffaa00, 0 0 40px #ff8800;
   animation: textGlow 2s ease-in-out infinite;

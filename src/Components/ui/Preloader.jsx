@@ -7,7 +7,7 @@ const Preloader = () => {
   <div class="chakra">
     <div class="mandala"></div>
     <img src={logo} alt="Jeevan Chakra" class="logo" />
-    <div class="chakra-text">Om Jeevan Chakra</div>
+    <div class="chakra-text">Welcome to Jeevan Chakra - Cycle of Life</div>
   </div>
 </div>
 

@@ -23,7 +23,7 @@ const Home = () => {
 
       <Gallery />
       <ProductList/>
-<ProductingCard/>
+{/* <ProductingCard/> */}
 
       <SushmitaAbbi />
       <Youtube />

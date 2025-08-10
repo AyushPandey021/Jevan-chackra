@@ -1,5 +1,9 @@
 import React from "react";
-// import img1 from "../assets/Angelanorecle/1.png"
+import img1 from "../../assets/1.png"
+import aglecard from "../../assets/anglecard.jpg"
+import aglecard2 from "../../assets/angle2.png"
+import fronangle from "../../assets/front.png"
+
 
 
 
@@ -29,7 +33,7 @@ const AngelAndOracleCardReading = () => {
       {/* session 02 */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <img
-          src="/images/healing1.jpg"
+          src={fronangle}
           alt="Healing Session"
           className="rounded-xl shadow-lg"
         />
@@ -54,7 +58,7 @@ const AngelAndOracleCardReading = () => {
           </ul>
         </div>
         <img
-          src="/images/technique.jpg"
+          src={aglecard}
           alt="Healing Technique"
           className="rounded-xl shadow-lg"
         />
@@ -62,7 +66,7 @@ const AngelAndOracleCardReading = () => {
       {/* session 04 */}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/symbols.jpg"
+          src="https://imgs.search.brave.com/XOMvH7-qYO9EHHUHUKiy51DwnVSNXzGlLu5ghU0xeGk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEwLzE2LzIyLzI2/LzM2MF9GXzEwMTYy/MjI2NjdfNGhMcEFN/NkhzbHl1VU1MaXhv/dk9UMUg2cnY1SWdG/ankuanBn"
           alt="Symbols and Mantras"
           className="rounded-xl shadow-lg"
         />
@@ -88,7 +92,7 @@ const AngelAndOracleCardReading = () => {
           </ul>
         </div>
         <img
-          src="/images/benefits.jpg"
+          src={aglecard2}
           alt="Benefits of Healing"
           className="rounded-xl shadow-lg"
         />
@@ -96,7 +100,7 @@ const AngelAndOracleCardReading = () => {
 
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/session.jpg"
+          src={img1}
           alt="Healing Session Image"
           className="rounded-xl shadow-lg"
         />

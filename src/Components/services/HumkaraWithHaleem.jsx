@@ -1,9 +1,10 @@
 import React from "react";
-import img2 from "../assets/hil1.png"
+import img2 from "../../assets/hil1.png"
 
 
-import img3 from "../assets/hil2.png"
-import img1 from "../assets/humkara-heelam.png"
+import img3 from "../../assets/hil2.png"
+
+import img1 from "../../assets/humkara-heelam.png"
 const HumkaraWithHaleem = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");

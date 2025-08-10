@@ -1,9 +1,9 @@
 import React from "react";
-import SPfront from "../assets/SPfront.png"
-import SP1 from "../assets/SP1.png"
-import SP2 from "../assets/SP2.png"
-import SP3 from "../assets/SP3.png"
-import SP4 from "../assets/SP4.png"
+import SPfront from "../../assets/SPfront.png"
+import SP1 from "../../assets/SP1.png"
+import SP2 from "../../assets/SP2.png"
+import SP3 from "../../assets/SP3.png"
+import SP4 from "../../assets/SP4.png"
 const  SpecialSpiritualAndEnergyHealing = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");

@@ -1,8 +1,8 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-import badgeBg from '../assets/45.png';
-import './animatedBackground.css'; // your glow + rotate animation
+import badgeBg from '../../assets/45.png';
+import "../style/animatedBackground.css"; // your glow + rotate animation
 
 const stats = [
   { end: 1000, suffix: '+', label: 'Trusted Clients' },

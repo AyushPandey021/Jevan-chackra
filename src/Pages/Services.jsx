@@ -1,63 +1,71 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import numrology from "./../assets/numrology.png";
+import HumkaraHeleem from "./../assets/humkara-heelam.png";
+import lamafera from "./../assets/lemafera.jpg";
+import thoerfornt from "./../assets/thoerfornt.png";
+import angle from "./../assets/angle2.png";
+import main from "./../assets/main.png";
+import anglefront from "./../assets/front.png";
+import SP3 from "./../assets/SP3.png";
 
 const servicesData = [
   {
     title: "Numerology Service",
     description: "Modern, unique, and engaging designs for your brand.",
-    src: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop",
+    src: numrology,
     alt: "Notebook, iPad, laptop, and coffee",
     link: "/numerology-service",
   },
   {
     title: "Lama Fera Healing Services",
     description: "Capturing moments with perfection and style.",
-    src: "https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop",
+    src:lamafera,
     alt: "Sunset behind San Francisco",
     link: "/lamaFera-healing",
   },
   {
     title: "Torat Consultancy Service",
     description: "Experience the city like never before.",
-    src: "https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop",
+    src: thoerfornt,
     alt: "Tokyo busy street at night",
-    link: "/toratconsultancy",
+    link: "/tarotconsultancy",
   },
   {
     title: "Humkara Heleem Healing Services",
     description: "Travel in style and comfort with our premium rides.",
-    src: "https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop",
+    src: HumkaraHeleem,
     alt: "Car interior busy night",
     link: "/humkara-heleem",
   },
   {
     title: "Angel Healing and Therapy",
     description: "Trendy styles inspired by the heart of the city.",
-    src: "https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop",
+    src: angle,
     alt: "Woman crossing road in NYC",
     link: "/therapyangel-healing",
   },
   {
     title: "Special Spiritual Energy Healing",
     description: "Enjoy live performances from talented artists.",
-    src: "https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop",
+    src:main,
     alt: "Man playing electric guitar",
     link: "/specialspiritual-energy-healing",
   },
   {
     title: "Angel And Oracle Card Reading",
     description: "Enjoy live performances from talented artists.",
-    src: "https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop",
+    src: anglefront,
     alt: "Man playing electric guitar",
     link: "/angelandoracle-cardreading",
   },
   {
     title: "Emotional Freedom techniques ",
     description: "Enjoy live performances from talented artists.",
-    src: "https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop",
+    src:SP3,
     alt: "Man playing electric guitar",
-    link: "/emotionalfreedom-techniques ",
+    link: "/emotionalfreedom-techniques",
   },
 ];
 
@@ -114,6 +122,7 @@ const ServicesGallery = () => {
             </div>
           </motion.div>
         ))}
+
       </div>
 
       {/* CTA */}

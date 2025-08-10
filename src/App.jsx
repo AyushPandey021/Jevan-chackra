@@ -1,39 +1,60 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import ProductPage from './Pages/products/ProductPage.jsx';
-import Navbar from './Components/layout/Navbar.jsx';
-import ScrollTop from "./Components/layout/ScrollTop.jsx";
-import TarotConsultancy from './Components/TarotConsultancy';
-import NumerologyServices from './Components/Numerology';
-import LamaFeraHealing from './Components/LamaFara';
-import CartPage from './Components/CartPage';
-import CheckoutPage from './Components/CheckOutPage';
+// import ProductCard from './Components/ui/ProductsCard';
+import Home from "./Pages/Home";
+import ScrollTop from "./Components/layout/ScrollTop";
+import Navbar from "./Components/layout/Navbar";
+import ProductDetails from './Pages/products/ProductDetails';
+import CartPage from "./Components/CartPage";
+import CheckoutPage from "./Pages/CheckoutPage";
+import TarotConsultancy from "./Components/services/TarotConsultancy";
+import NumerologyServices from "./Components/services/NumerologyPage";
+import LamaFeraHealing from "./Components/services/LamaFaraPage";
+import HumkaraHeleem from "./Components/services/HumkaraWithHaleem";
+import TherapyAngelHealing from "./Components/services/TherapyAngelhHealing";
+import AngelAndOracleCardReading from "./Components/services/AngelAndOracleCardReading";
+import SpecialSpiritualAndEnergyHealing from "./Components/services/SpecialSpiritual&EnergyHealing";
+import EmotionalFreedomTechniques from "./Components/services/EmotionalFreedomTechniques";
 import About from "./Components/About";
-import BlogList from "./Pages/BlogList";
-import Services from './Pages/Services';
-import BlogDetail from './Pages/blog/BlogDetail.jsx';
-import Contact from './Pages/Contact';
-import ProductDetails from './Pages/products/ProductDetails.jsx';
-import HumkaraHeleem from './Components/services/HumkaraHeleem.jsx';
-import TherapyAngelHealing from './Components/services/TherapyAngelhHealing.jsx';
-import SpecialSpiritualAndEnergyHealing from './Components/services/SpecialSpiritual&EnergyHealing.jsx';
-import AngelAndOracleCardReading from './Components/services/AngelAndOracleCardReading.jsx';
-import EmotionalFreedomTechniques from './Components/services/EmotionalFreedomTechniques.jsx';
-import Booking from './Components/booking/Booking.jsx';
-import Footer from './Components/layout/Footer.jsx';
+import Services from "./Pages/Services";
+import BlogList from "./Pages/blog/BlogList";
+import BlogDetail from "./Pages/blog/BlogDetail";
+import Contact from "./Pages/Contact";
+import Booking from "./Components/booking/Booking";
+import Footer from "./Components/layout/Footer";
+import ProductList from './Components/ui/ProductList';
+import ConfirmOrder from './Pages/order/ConfirmOrder';
+import OrdersPage from './Pages/OrdersPage';
+
+// Import Preloader
+import Preloader from "./Components/ui/Preloader"; // create this file
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time (you can replace with real data fetching)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Preloader />;
+  }
+
   return (
     <div className="bg-[#EAC3D0] text-[#973C00]">
       <ScrollTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<ProductPage />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/productsList" element={<ProductList />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="//confirm-order" element={<ConfirmOrder />} />
         <Route path="/tarotconsultancy" element={<TarotConsultancy />} />
         <Route path="/numerology-service" element={<NumerologyServices />} />
         <Route path="/lamaFera-healing" element={<LamaFeraHealing />} />
@@ -47,45 +68,12 @@ function App() {
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/orders" element={<OrdersPage />} />
         <Route path="/booking-appointment" element={<Booking />} />
       </Routes>
       <Footer />
-
     </div>
-  )
+  );
 }
+
 export default App;
-
-// import EmotionalFreedomTechniques from'./Components/EmotionalFreedomTechniques';
-// function App() {
-//   return (
-//     <>
-
-
-//       <Router>
-//         <ScrollTop />
-//
-//         <Navbar />
-//         <EmotionalFreedomTechniques/>
-//         <Routes>
-
-//           <Route path="/" element={<Home />} />
-//           <Route path="/products" element={<ProductPage />} />
-//           <Route path="/ServiceGalleryPage" element={<ServiceGalleryPage />} />
-//           <Route path="/cart" element={<CartPage />} />
-//           <Route path="/checkout" element={<CheckoutPage />} />
-//           <Route path="/ToratConsultancy" element={<TarotConsultancy />} />
-//           <Route path="/NumerologyServices" element={<NumerologyServices />} />
-//           <Route path="/LamaFeraHealing" element={<LamaFeraHealing />} />
-//           <Route path="/about" element={<About />} />
-//           <Route path="/blog" element={<BlogList />} />
-//           <Route path="/blog/:id" element={<BlogDetail />} />
-//           {/* <Route path="/LamaFeraHealing" element={<LamaFeraHealing />} /> */}
-//         </Routes>
-//       </Router>
-//     </>
-
-//   );
-// }
-
-// export default App;

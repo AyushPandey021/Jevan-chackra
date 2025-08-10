@@ -1,8 +1,8 @@
 import React from "react";
-import Front from "../assets/Tfront.png"
-import    t1 from "../assets/T1.jpg"
-import t2 from "../assets/T2.png"
-import t3 from "../assets/T3.jpg"
+import Front from "../../assets/Tfront.png"
+import    t1 from "../../assets/T1.jpg"
+import t2 from "../../assets/T2.png"
+import t3 from "../../assets/T3.jpg"
 const   TherapyAngelHealing = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");

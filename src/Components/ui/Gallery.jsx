@@ -1,29 +1,48 @@
 import React from "react";
+import numrology from "../../assets/numrology.png";
+import HumkaraHeleem from "../../assets/humkara-heelam.png";
+import lamafera from "../../assets/lemafera.jpg";
+import thoerfornt from "../../assets/thoerfornt.png";
+import angle from "../../assets/angle2.png";
+import main from "../../assets/main.png";
+import { Link } from "react-router-dom";
 
-const images = [
+const services = [
   {
-    src: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop",
+    src: numrology,
     alt: "Notebook, iPad, laptop, and coffee",
+    link: "/numerology-service",
+    label: "Numerology",
   },
   {
-    src: "https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop",
+    src: HumkaraHeleem,
     alt: "Sunset behind San Francisco",
+    link: "/humkara-heleem",
+    label: "Humkara Heleem",
   },
   {
-    src: "https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop",
+    src: lamafera,
     alt: "Tokyo busy street at night",
+    link: "/lamaFera-healing",
+    label: "Lamafera",
   },
   {
-    src: "https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop",
+    src: thoerfornt,
     alt: "Car interior busy night",
+    link: "/tarotconsultancy",
+    label: "Theorfornt",
   },
   {
-    src: "https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop",
+    src: angle,
     alt: "Woman crossing road in NYC",
+    link: "/angelandoracle-cardreading",
+    label: "Angel Healing",
   },
   {
-    src: "https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop",
+    src: main,
     alt: "Man playing electric guitar",
+    link: "/specialspiritual-energy-healing",
+    label: "Spiritual Energy",
   },
 ];
 
@@ -31,29 +50,27 @@ const Gallery = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       <h1 className="text-6xl md:text-5xl font-bold text-center text-red-900 mb-8 font-[Montserrat]">
-      Our Services
-        {/* <span className="block text-lg mt-2 text-gray-600">
-          Flexbox Fallback (via Tailwind)
-        </span> */}
+        Our Services
       </h1>
 
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        {images.map((img, idx) => (
+        {services.map((service, idx) => (
           <div
             key={idx}
             className="relative overflow-hidden shadow-lg rounded group"
           >
-            {/* Image with blur effect on hover */}
             <img
-              src={img.src}
-              alt={img.alt}
-              className="w-full h-full object-cover transform transition duration-300 group-hover:scale-110 group-hover:blur-xs"
+              src={service.src}
+              alt={service.alt}
+              className="w-full h-full object-cover transition duration-300 group-hover:scale-110 group-hover:blur-sm"
             />
 
-            {/* Centered Button */}
-            <button className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black font-semibold px-4 py-2 rounded shadow hover:bg-black hover:text-white transition duration-300">
-              Click Me
-            </button>
+            <Link
+              to={service.link}
+              className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black font-semibold px-4 py-2 rounded shadow hover:bg-black hover:text-white transition duration-300"
+            >
+              {service.label}
+            </Link>
           </div>
         ))}
       </div>
@@ -62,5 +79,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
-

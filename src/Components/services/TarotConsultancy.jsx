@@ -1,5 +1,10 @@
 import React from "react";
 
+import tarot from "../../assets/torotc.jpg"
+import t1 from "../../assets/T1.jpg"
+import t2 from "../../assets/T2.png"
+import t3 from "../../assets/T3.jpg"
+import t4 from "../../assets/T4.png"
 const TarotConsultancy = () => {
   const scrollToBooking = () => {
     const section = document.getElementById("booking-section");
@@ -25,7 +30,7 @@ const TarotConsultancy = () => {
       {/* session 02 */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <img
-          src="/images/healing1.jpg"
+          src={tarot}
           alt="Healing Session"
           className="rounded-xl shadow-lg"
         />
@@ -47,7 +52,7 @@ const TarotConsultancy = () => {
           </ul>
         </div>
         <img
-          src="/images/technique.jpg"
+          src={t1}
           alt="Healing Technique"
           className="rounded-xl shadow-lg"
         />
@@ -55,7 +60,7 @@ const TarotConsultancy = () => {
       {/* session 04 */}
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/symbols.jpg"
+        src={t2}
           alt="Symbols and Mantras"
           className="rounded-xl shadow-lg"
         />
@@ -75,7 +80,7 @@ const TarotConsultancy = () => {
           </ul>
         </div>
         <img
-          src="/images/benefits.jpg"
+          src={t3}
           alt="Benefits of Healing"
           className="rounded-xl shadow-lg"
         />
@@ -83,7 +88,7 @@ const TarotConsultancy = () => {
 
       <div className="grid md:grid-cols-2 gap-10 items-center mt-12">
         <img
-          src="/images/session.jpg"
+         src={t4}
           alt="Healing Session Image"
           className="rounded-xl shadow-lg"
         />

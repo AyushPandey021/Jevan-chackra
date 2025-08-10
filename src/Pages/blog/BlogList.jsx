@@ -1,6 +1,6 @@
 import React from 'react';
-import BlogHero from '../Components/BlogHero';
-import BlogCard from '../Components/BlogCard';
+import BlogHero from '../../Components/BlogHero';
+import BlogCard from '../../Components/BlogCard';
 
 const dummyBlogs = [
   {

@@ -2,10 +2,11 @@ import React from 'react'
 import Pg02 from '../Components/Pg02'
 import StatsCounter from '../Components/ui/StatsCounter'
 import Gallery from '../Components/ui/Gallery'
-import Card from '../Components/ui/ProductsCard'
+import ProductingCard from '../Components/ui/ProductingCard'
 import SushmitaAbbi from '../Components/SushmitaAbbi'
 import Youtube from '../Components/ui/YoutubeGallery'
 import TestimonialMarquee from '../Components/ui/TestimonialMarquee'
+import ProductList from '../Components/ui/ProductList'
 
 const Home = () => {
   return (
@@ -21,7 +22,8 @@ const Home = () => {
       <StatsCounter />
 
       <Gallery />
-      <Card />
+      <ProductList/>
+<ProductingCard/>
 
       <SushmitaAbbi />
       <Youtube />

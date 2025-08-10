@@ -6,7 +6,10 @@ import ScrollTop from "./Components/layout/ScrollTop";
 import Navbar from "./Components/layout/Navbar";
 import ProductDetails from './Pages/products/ProductDetails';
 import CartPage from "./Components/CartPage";
+// import CheckoutPage from "./Pages/CheckoutPage"; 
 import CheckoutPage from "./Pages/CheckoutPage";
+
+
 import TarotConsultancy from "./Components/services/TarotConsultancy";
 import NumerologyServices from "./Components/services/NumerologyPage";
 import LamaFeraHealing from "./Components/services/LamaFaraPage";

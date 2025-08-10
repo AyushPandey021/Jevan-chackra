@@ -5,7 +5,7 @@ const dummyBlogs = [
   {
     id: '1',
     title: 'Unlocking Chakras: Energy Within',
-    content: `Chakras are the seven energy points in your body...`,
+    content: ` Embark on a journey of self-discovery as you awaken and align your chakras. Learn to harmonize mind, body, and spirit, unlocking the flow of energy that empowers your well-being and spiritual growth.`,
     image: 'https://i.pinimg.com/736x/60/0b/03/600b036c80a17130ffa80001785dafff.jpg',
   },
   {
@@ -17,7 +17,7 @@ const dummyBlogs = [
   {
     id: '3',
     title: 'Healing with Switch Words',
-    content: `Switch words are chosen words believed to connect...`,
+    content: `Switch words are carefully chosen words or phrases believed to tap into the subconscious mind, helping to shift energy, release blocks, and manifest desired outcomes. By repeating them with intention, you can promote emotional balance, healing, and positive transformation.`,
     image: 'https://i.pinimg.com/736x/5f/23/f4/5f23f4c85ecbad891e1a600e15cf7631.jpg',
   },
 ];

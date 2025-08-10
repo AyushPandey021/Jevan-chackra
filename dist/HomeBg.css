@@ -1,0 +1,253 @@
+/* Reset & Fonts */
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: #000;
+}
+
+/* Background Layer */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  object-fit: cover;
+}
+
+/* Foreground Container */
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(20, 20, 20, 0.2));
+  backdrop-filter: blur(2px);
+  color: #fff;
+}
+
+/* Text Box */
+.text-box {
+  flex: 1;
+  max-width: 600px;
+  /* padding-top: 1rem; */
+  padding-right: 2rem;
+
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+/* Headline */
+.headline1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  color: #FF6467;
+  text-shadow: 0 0 10px rgba(137, 152, 74, 0.4);
+}
+
+/* Sub-Text Spiritual */
+.sub-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  color: #eaa0c5;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  animation: fadeGlow 2s ease-in-out infinite alternate;
+}
+
+/* Description */
+.headline2 {
+  font-size: 1rem;
+  color: #f1f1f1;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  font-size: 0.95rem;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #ff8da3, #ff3e6c);
+  color: #fff;
+  box-shadow: 0 0 20px #ffb6c1;
+}
+
+.btn.primary:hover {
+  background: linear-gradient(135deg, #ff5c85, #e60050);
+  box-shadow: 0 0 25px #ffa0b8;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #fff;
+  color: #e91e63;
+}
+
+/* Right Logo */
+.logo-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.jivan-logo {
+  width: 580px;
+  height: 400px;
+  /* margin-top: 50px; */
+  filter: drop-shadow(0 0 20px rgba(255, 192, 203, 0.4));
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeGlow {
+  from {
+    opacity: 0.6;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .content-overlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .logo-wrapper {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+  .jivan-logo {
+    width: 200px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .text-box {
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .headline1 {
+    font-size: 2rem;
+  }
+
+  .sub-text {
+    font-size: 1.2rem;
+  }
+
+  .headline2 {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+/* From Uiverse.io by JkHuger */
+.rainbow-hover {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff7576;
+  background-color: #2b3044;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  position: relative;
+  line-height: 24px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px #2b3044, 0px 4px 16px #2b3044;
+  transform-style: preserve-3d;
+  transform: scale(var(--s, 1)) perspective(600px) rotateX(var(--rx, 0deg))
+    rotateY(var(--ry, 0deg));
+  perspective: 600px;
+  transition: transform 0.1s;
+}
+
+.sp {
+  background: linear-gradient(
+    90deg,
+    #866ee7,
+    #ea60da,
+    #ed8f57,
+    #fbd41d,
+    #2cca91
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: block;
+}
+
+.rainbow-hover:active {
+  transition: 0.3s;
+  transform: scale(0.93);
+}

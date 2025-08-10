@@ -1,0 +1,109 @@
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="HomeBg.css">
+   
+
+<canvas id="neural-network-canvas"></canvas>
+
+ <div class="content-overlay">
+  <!-- Left side text -->
+  <div class="text-box">
+    <h1 class="headline1">Jevan Chakra  Cycle of Life</h1>
+    <p class="sub-text">✨ Awaken Your Inner Self with Jevan Chakra ✨</p>
+    <p class="headline2">
+      A sacred space for healing, transformation, and inner awakening.<br />
+      Explore wellness through Astro-Numerology, Reiki, Tarot, and more.
+    </p>
+
+    <!-- <div class="btn-group">
+<button  data-label="Register" class="rainbow-hover">
+  <a href="/google.com"class="sp">Register</span>
+   
+</button>
+<button data-label="Register" class="rainbow-hover">
+  <span class="sp">Register</span>
+</button>
+ 
+        <!-- </div> -->
+ </div> 
+
+  <!-- Right side logo -->
+  <div class="logo-wrapper">
+    <img class="jivan-logo" src="./logomeain1.png" alt="Jivan Chakra Logo" />
+  </div>
+</div>
+
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1200);
+camera.position.set(0, 0, 50);
+
+const renderer = new THREE.WebGLRenderer({
+  canvas: document.getElementById('neural-network-canvas'),
+  antialias: true
+});
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setClearColor(0xD2AFBB); // black background
+
+// ✅ Big, glowing white stars
+const bigStars = (() => {
+  const count = 200; // Few stars only
+  const positions = [];
+  for (let i = 0; i < count; i++) {
+    const x = THREE.MathUtils.randFloatSpread(80);
+    const y = THREE.MathUtils.randFloatSpread(80);
+    const z = THREE.MathUtils.randFloatSpread(80);
+    positions.push(x, y, z);
+  }
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+
+  const material = new THREE.PointsMaterial({
+    color: 0xDF6FC3,
+    size: 2,             // Bigger stars
+    sizeAttenuation: true,
+    transparent: true,
+    opacity: 0.2
+  });
+
+  return new THREE.Points(geometry, material);
+})();
+scene.add(bigStars);
+
+// ✅ Disable user controls
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false;
+controls.enablePan = false;
+controls.enableRotate = false;
+
+// ✅ Animate stars slowly
+const animate = () => {
+  requestAnimationFrame(animate);
+  bigStars.rotation.y += 0.006; // very slow rotation
+  renderer.render(scene, camera);
+};
+animate();
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+</script>
+

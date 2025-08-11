@@ -6,7 +6,7 @@ import HumkaraHeleem from "./../assets/humkara-heelam.png";
 import lamafera from "./../assets/lemafera.jpg";
 import thoerfornt from "./../assets/thoerfornt.png";
 import angle from "./../assets/angle2.png";
-import main from "./../assets/main.png";
+import main from "./../assets/Main.png";
 import anglefront from "./../assets/front.png";
 import SP3 from "./../assets/SP3.png";
 

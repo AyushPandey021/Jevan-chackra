@@ -2,6 +2,7 @@ import React from "react";
 
 
 import la1 from "../../assets/LA1.png"
+
 import la2 from "../../assets/LA2.png"
 import la3 from "../../assets/LA3.png"
 import la4 from "../../assets/LA4.png"

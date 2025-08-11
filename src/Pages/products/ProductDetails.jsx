@@ -21,7 +21,7 @@ export default function ProductDetail() {
 
   const handleBuyNow = () => {
     addToCart({ ...product, quantity });
-    navigate("/checkout");
+    navigate("/checkoutpage");
   };
 
   const handleAddToCart = () => {

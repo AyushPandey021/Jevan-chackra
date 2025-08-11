@@ -7,7 +7,7 @@ import Navbar from "./Components/layout/Navbar";
 import ProductDetails from './Pages/products/ProductDetails';
 import CartPage from "./Components/CartPage";
 // import CheckoutPage from "./Pages/CheckoutPage"; 
-import CheckoutPage from "./Pages/CheckoutPage";
+import CheckoutPage from "./Pages/products/CheckoutPage";
 
 
 import TarotConsultancy from "./Components/services/TarotConsultancy";
@@ -56,7 +56,7 @@ function App() {
         <Route path="/productsList" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<CartPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/checkoutpage" element={<CheckoutPage />} />
         <Route path="//confirm-order" element={<ConfirmOrder />} />
         <Route path="/tarotconsultancy" element={<TarotConsultancy />} />
         <Route path="/numerology-service" element={<NumerologyServices />} />

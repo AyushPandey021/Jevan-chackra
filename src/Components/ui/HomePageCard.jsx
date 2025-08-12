@@ -7,21 +7,21 @@ const products = [
     title: "Wireless Headphones",
     price: 1999,
     image:
-      "https://images.unsplash.com/photo-1585386959984-a4155223f3e7?w=600&auto=format&fit=crop&q=60",
+      "https://imgs.search.brave.com/8_saa1eMPcUBlPejNVJLZfLZ4xf_E4YOa6LtEXBMjhw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9z/cGlyaXR1YWwtYXdh/a2VuaW5nLWNvbmNl/cHRfMjMtMjE1MDc3/MTY3My5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQw",
   },
   {
     id: 2,
     title: "Smart Watch",
     price: 3499,
     image:
-      "https://images.unsplash.com/photo-1523473827532-2a64d0d47783?w=600&auto=format&fit=crop&q=60",
+      "https://imgs.search.brave.com/2XhQtc_GPKN8uNEK8gg-bNsyOoRtXDjsR35KTqEV1MU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvNDc4/MDQyMzMvc3RvY2st/cGhvdG8tc3Bpcml0/dWFsLWhlYWxpbmct/b3Ji",
   },
   {
     id: 3,
     title: "DSLR Camera",
     price: 45999,
     image:
-      "https://images.unsplash.com/photo-1519183071298-a2962be96c85?w=600&auto=format&fit=crop&q=60",
+      "https://imgs.search.brave.com/Nl_JVUxO5TjzHQ4LB1qMYm4C8E5maNN8yFrKCk0XtBc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvaGlu/ZHVpc20tc3Bpcml0/dWFsLWFlc3RoZXRp/Yy1weWd1ZzV3Y2d1/Mzc4dDYyLmpwZw",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const products = [
     title: "Bluetooth Speaker",
     price: 2499,
     image:
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&auto=format&fit=crop&q=60",
+      "https://imgs.search.brave.com/JWmYDNHTqCbD8iErER5gFWCNU3cELGquWWkqlR4cpuo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/MTcxLzI5Ny9zbWFs/bC96ZW4tc3BhY2Ut/cmVsYXhhdGlvbi1t/ZWRpdGF0aW5nLXN0/YXIteW9nYS1nbG93/aW5nLXNwaXJpdHVh/bGl0eS1zaWxob3Vl/dHRlLWxvdHVzLXVu/aXZlcnNlLWVuZXJn/eS1waG90by5qcGc",
   },
 ];
 

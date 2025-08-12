@@ -15,7 +15,7 @@ export default function ProductCard({ product }) {
   return (
     <div
       className="
-        bg-white rounded-md shadow-sm hover:shadow-md 
+        bg-white mt-20 rounded-md shadow-sm hover:shadow-md 
         transition-all duration-300 cursor-pointer flex flex-col
         overflow-hidden border border-gray-200
         w-full max-w-[160px] sm:max-w-[180px] mx-auto

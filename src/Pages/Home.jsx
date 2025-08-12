@@ -11,7 +11,7 @@ import HomePageCard from "../Components/ui/HomePageCard"
 
 const Home = () => {
   return (
-    <div className='bg-[#EAC3D0]'>
+    <div className='bg-[#CFCFCF] text-[#973C00]'>
       <div style={{ height: '100vh' }}>
         <iframe
           src="/HomeBg.html"

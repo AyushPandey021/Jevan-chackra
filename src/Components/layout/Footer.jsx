@@ -11,9 +11,9 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#eeb6c8] text-white pt-12 pb-6 px-4 sm:px-8 lg:px-16">
+    <footer className="relative overflow-hidden bg-[#eeb6c8] text-white pt-8 sm:pt-12 pb-4 sm:pb-6 px-4 sm:px-8 lg:px-16">
       {/* Floating Star Chakra Symbol */}
-      <div className="absolute top-0 right-0 opacity-10 text-white text-[12rem] md:text-[16rem] pointer-events-none">
+      <div className="absolute top-0 right-0 opacity-10 text-white text-[8rem] sm:text-[12rem] md:text-[16rem] pointer-events-none">
         <MdOutlineStarPurple500 className="animate-spin-slow" />
       </div>
 
@@ -23,20 +23,23 @@ export default function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 relative z-10"
       >
         {/* Brand */}
         <div className="text-center lg:text-left">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">Jevan Chakra</h2>
-          <p className="text-base sm:text-lg font-semibold mb-3">
+          <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">
+            Jevan Chakra
+          </h2>
+          <p className="text-sm sm:text-base font-semibold mb-2 sm:mb-3">
             Cycle Of Life
           </p>
-          <p className="text-sm leading-6 max-w-xs mx-auto lg:mx-0">
+          <p className="text-xs sm:text-sm leading-5 max-w-xs mx-auto lg:mx-0">
             Spreading the nectar of spiritual tranquility — align your body,
             mind & soul through ancient energy healing.
           </p>
 
-          <div className="flex justify-center lg:justify-start gap-4 mt-6">
+          {/* Social Links */}
+          <div className="flex justify-center lg:justify-start gap-3 sm:gap-4 mt-4 sm:mt-6">
             {[
               { icon: FaFacebookF, href: "#" },
               { icon: FaXTwitter, href: "#" },
@@ -46,7 +49,7 @@ export default function Footer() {
               <a
                 key={idx}
                 href={href}
-                className="transition hover:scale-110 bg-white text-red-700 p-2 rounded-full shadow text-lg"
+                className="transition hover:scale-110 bg-white text-red-700 p-2 rounded-full shadow text-base sm:text-lg"
               >
                 <Icon />
               </a>
@@ -56,34 +59,35 @@ export default function Footer() {
 
         {/* Contact */}
         <div className="text-center sm:text-left">
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4">
+          <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3 sm:mb-4">
             Contact Us
           </h3>
-          <ul className="space-y-3 text-sm sm:text-base">
+          <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
             <li className="flex justify-center sm:justify-start items-center gap-2">
-              <FaMapMarkerAlt /> Greater Noida West Sector 1
+              <FaMapMarkerAlt /> Greater Noida West
             </li>
             <li className="flex justify-center sm:justify-start items-center gap-2">
               <FaEnvelope /> contactus@jevanchakra.com
             </li>
+            {/* Only show both phone numbers on larger screens */}
             <li className="flex justify-center sm:justify-start items-center gap-2">
               <FaPhoneAlt /> +91-9311422467
             </li>
-            <li className="flex justify-center sm:justify-start items-center gap-2">
+            <li className="hidden sm:flex justify-start items-center gap-2">
               <FaPhoneAlt /> +91-8130695345
             </li>
           </ul>
         </div>
 
-        {/* Quick Links */}
-        <div className="text-center sm:text-left">
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4">
+        {/* Quick Links - hidden on very small screens */}
+        <div className="hidden sm:block text-center sm:text-left">
+          <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3 sm:mb-4">
             Quick Links
           </h3>
-          <ul className="space-y-3 text-sm sm:text-base">
+          <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
             {[
               { name: "Home", href: "#" },
-              { name: "Products (Free Shipping)", href: "#products" },
+              { name: "Products", href: "#products" },
               { name: "Services", href: "#services" },
               { name: "Blog", href: "#blog" },
             ].map((link, idx) => (
@@ -106,9 +110,9 @@ export default function Footer() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 1 }}
         viewport={{ once: true }}
-        className="text-center mt-10 py-4 px-4 border-t border-white/20"
+        className="text-center mt-6 sm:mt-10 py-3 sm:py-4 px-2 border-t border-white/20"
       >
-        <p className="text-yellow-100 italic animate-pulse text-xs sm:text-sm">
+        <p className="text-yellow-100 italic animate-pulse text-[10px] sm:text-xs">
           “Om Mani Padme Hum” — May all beings be happy & free.
         </p>
       </motion.div>
@@ -119,7 +123,7 @@ export default function Footer() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
         viewport={{ once: true }}
-        className="text-center mt-2 text-[11px] sm:text-xs text-white/70"
+        className="text-center mt-1 text-[9px] sm:text-[11px] text-white/70"
       >
         © {new Date().getFullYear()} Jevan Chakra. All Rights Reserved.
       </motion.div>

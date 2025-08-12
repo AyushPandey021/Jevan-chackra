@@ -3,7 +3,7 @@ import jivanVideo from '../assets/jivan-pg2-vid.mp4';
 
 const Pg02 = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center mt-10 bg-[#EAC3D0] p-4 md:p-8 gap-8">
+    <div className="flex flex-col md:flex-row items-center justify-center mt-10    p-4 md:p-8 gap-8">
       
       {/* Video Box - Fixed size, responsive on small screens */}
       <div className="w-full md:w-1/2 flex justify-center">
@@ -19,7 +19,7 @@ const Pg02 = () => {
 
       {/* Text Box - Responsive font sizes */}
       <div className="w-full md:w-1/2 text-center space-y-3 md:space-y-4 px-2 md:px-6">
-        <h2 className="text-gray-700 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           Who Are We.
         </h2>
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">

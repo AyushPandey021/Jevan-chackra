@@ -2,11 +2,11 @@ import React from 'react'
 import Pg02 from '../Components/Pg02'
 import StatsCounter from '../Components/ui/StatsCounter'
 import Gallery from '../Components/ui/Gallery'
-import ProductingCard from '../Components/ui/ProductingCard'
+
 import SushmitaAbbi from '../Components/SushmitaAbbi'
 import Youtube from '../Components/ui/YoutubeGallery'
 import TestimonialMarquee from '../Components/ui/TestimonialMarquee'
-import ProductList from '../Components/ui/ProductList'
+
 import HomePageCard from "../Components/ui/HomePageCard"
 
 const Home = () => {

@@ -30,7 +30,7 @@ export default function CartPage() {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen py-8 px-4">
+    <div className="bg-gray-50 mt-20 min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Cart Items */}
         <div className="lg:col-span-2 bg-white rounded-2xl shadow p-6">

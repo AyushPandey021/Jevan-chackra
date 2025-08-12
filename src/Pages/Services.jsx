@@ -31,7 +31,7 @@ const servicesData = [
 
 const ServicesGallery = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-25 bg-white">
       
       {/* Heading */}
       <motion.div

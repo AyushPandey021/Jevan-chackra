@@ -29,7 +29,7 @@ const Pg02 = () => {
           Cycle of Life is a spiritual wellness company devoted to helping individuals find inner peace,
           self-discovery, and holistic well-being.
           We offer a wide spectrum of personalized spiritual services, including 
-          <strong> Astro-Numerology, Tarot Consultancy, Spiritual Healing, Lama Fera, Angel Healing,
+          <strong className='text-[#8B4513]'> Astro-Numerology, Tarot Consultancy, Spiritual Healing, Lama Fera, Angel Healing,
           Crystal Therapy, Tapping Therapy, Humkara with Haleem,</strong> and 
           <strong> Reiki Healing</strong>. Each service is designed to guide you on your unique journey
           toward balance, clarity, and transformation.

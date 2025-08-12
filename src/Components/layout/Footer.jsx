@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#eeb6c8] text-white pt-8 sm:pt-12 pb-4 sm:pb-6 px-4 sm:px-8 lg:px-16">
+    <footer className="relative overflow-hidden bg-[#e3d5d9] text-[#8B4513] pt-8 sm:pt-12 pb-4 sm:pb-6 px-4 sm:px-8 lg:px-16">
       {/* Floating Star Chakra Symbol */}
       <div className="absolute top-0 right-0 opacity-10 text-white text-[8rem] sm:text-[12rem] md:text-[16rem] pointer-events-none">
         <MdOutlineStarPurple500 className="animate-spin-slow" />
@@ -110,9 +110,9 @@ export default function Footer() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 1 }}
         viewport={{ once: true }}
-        className="text-center mt-6 sm:mt-10 py-3 sm:py-4 px-2 border-t border-white/20"
+        className="text-center mt-6 text-4xl sm:mt-10 py-3 sm:py-4 px-2 border-t border-white/20"
       >
-        <p className="text-yellow-100 italic animate-pulse text-[10px] sm:text-xs">
+        <p className="text-orange-600 italic animate-pulse text-[10px] lg:text-2xl sm:text-xs">
           “Om Mani Padme Hum” — May all beings be happy & free.
         </p>
       </motion.div>
@@ -123,7 +123,7 @@ export default function Footer() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
         viewport={{ once: true }}
-        className="text-center mt-1 text-[9px] sm:text-[11px] text-white/70"
+        className="text-center mt-1 text-[9px] sm:text-[11px] text-gray-800"
       >
         © {new Date().getFullYear()} Jevan Chakra. All Rights Reserved.
       </motion.div>

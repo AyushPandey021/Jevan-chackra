@@ -1,4 +1,3 @@
-// src/pages/ProductsPage.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -29,8 +28,9 @@ const products = [
     title: "Gaming Mouse",
     price: 1499,
     image:
-      "https://images.unsplash.com/photo-1606813902917-4a2c13f59bb1?w=600&auto=format&fit=crop&q=60",
+      "https://plus.unsplash.com/premium_photo-1729851527149-e414003cbf1f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3JpcHR1YWx8ZW58MHx8MHx8fDA%3D",
   },
+
   {
     id: 5,
     title: "Bluetooth Speaker",
@@ -48,42 +48,45 @@ export default function ProductsPage() {
   };
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+    <div className="bg-white min-h-screen p-3 sm:p-6 lg:p-8">
+      {/* Heading */}
+      <h1 className="text-lg sm:text-2xl lg:text-4xl font-bold mb-6 text-center text-[#5C4033]">
         Our Products
       </h1>
 
-      {/* Responsive grid layout */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 p-14">
+      {/* Product Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
         {products.map((product) => (
           <div
             key={product.id}
             onClick={() => goToProduct(product.id)}
-            className="cursor-pointer border rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col bg-white"
+            className="cursor-pointer bg-white border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col"
           >
-            {/* Image container with fixed height */}
-            <div className="h-40 sm:h-48 overflow-hidden flex justify-center items-center">
+            {/* Image */}
+            <div className="aspect-square overflow-hidden flex items-center justify-center rounded-t-lg">
               <img
                 src={product.image}
                 alt={product.title}
-                className="object-cover h-full w-full"
+                className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
               />
             </div>
 
-            {/* Card content */}
-            <div className="p-3 sm:p-4 flex flex-col flex-grow justify-between">
-              <h2 className="text-base sm:text-lg font-semibold truncate">
-                {product.title}
-              </h2>
-              <p className="text-gray-600 text-sm sm:text-base">
-                ₹{product.price}
-              </p>
+            {/* Content */}
+            <div className="p-2 sm:p-3 flex flex-col flex-grow justify-between">
+              <div>
+                <h2 className="text-sm sm:text-base font-medium text-[#5C4033] truncate">
+                  {product.title}
+                </h2>
+                <p className="text-[#8B4513] text-xs sm:text-sm font-semibold">
+                  ₹{product.price.toLocaleString()}
+                </p>
+              </div>
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   goToProduct(product.id);
                 }}
-                className="mt-2 sm:mt-3 w-full bg-blue-600 text-white py-1.5 sm:py-2 text-sm sm:text-base rounded-md hover:bg-blue-700 transition-colors"
+                className="mt-2 w-full bg-[#8B4513] text-white py-1 sm:py-1.5 text-xs sm:text-sm rounded hover:bg-[#5C4033] transition-colors"
               >
                 View Details
               </button>

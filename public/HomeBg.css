@@ -54,9 +54,9 @@ body {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 0.8rem;
-  color: rgb(231, 169, 13);
+  color: #8B4513;
   text-shadow: 0 0 10px rgba(137, 152, 74, 0.4);
-}#8200DB
+}
 
 /* Sub-Text Spiritual */
 .sub-text {
@@ -70,7 +70,8 @@ body {
 
 /* Description */
 .headline2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  
   color: #f1f1f1;
   margin-bottom: 2rem;
   line-height: 1.7;

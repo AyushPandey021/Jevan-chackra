@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-pink-300 p-4 shadow-lg font-sans fixed top-0 left-0 w-full z-50">
+    <nav className="bg-[#f6f0f0]  p-4 shadow-lg font-sans fixed top-0 left-0 w-full z-50">
       <div className="flex items-center justify-between">
         
         {/* Left: Logo */}

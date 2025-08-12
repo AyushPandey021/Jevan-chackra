@@ -13,7 +13,7 @@ const BlogCard = ({ blog }) => {
     >
       <img src={blog.image} alt={blog.title} className="h-52 w-full object-cover" />
       <div className="p-5">
-        <h2 className="text-2xl font-bold text-purple-700 mb-2">{blog.title}</h2>
+        <h2 className="text-2xl font-bold text-[#8B4513] mb-2">{blog.title}</h2>
         <p className="text-gray-600 text-sm">{blog.description.slice(0, 100)}...</p>
       </div>
     </motion.div>

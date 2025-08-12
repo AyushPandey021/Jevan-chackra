@@ -20,10 +20,10 @@ export default function SushmitaAbbi() {
 
         {/* Text Section */}
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-purple-700 mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-[#8B4513] mb-4 leading-tight">
             Meet Our Founder
           </h1>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-6">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#8B4513] mb-6">
             Sushmita Abbi
           </h2>
 
@@ -44,7 +44,7 @@ export default function SushmitaAbbi() {
 
           <button
             onClick={() => navigate("/about")}
-            className="px-6 py-3 bg-gradient-to-r from-purple-500 to-purple-700 text-white rounded-full font-semibold shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300"
+            className="px-6 py-3 bg-[#8B4513] text-white rounded-full font-semibold shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300"
           >
             Read More
           </button>

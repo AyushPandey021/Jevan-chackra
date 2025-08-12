@@ -31,15 +31,15 @@ const BlogDetail = () => {
   if (!blog) return <div className="text-center py-20">Blog Not Found</div>;
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
+    <div className="max-w-3xl mt-10 mx-auto px-6 py-16">
       <button
         onClick={() => navigate(-1)}
-        className="mb-6 px-5 py-2 rounded-full bg-purple-100 text-purple-700 font-medium hover:bg-purple-200 transition"
+        className="mb-6 px-5 py-2 rounded-full bg-purple-100 text-[#8B4513] font-medium hover:bg-purple-200 transition"
       >
         ⬅️ Back
       </button>
       <img src={blog.image} alt={blog.title} className="rounded-xl shadow-xl w-full mb-6" />
-      <h1 className="text-4xl font-bold text-purple-700 mb-4">{blog.title}</h1>
+      <h1 className="text-4xl font-bold text-[#8B4513] mb-4">{blog.title}</h1>
       <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">{blog.content}</p>
     </div>
   );

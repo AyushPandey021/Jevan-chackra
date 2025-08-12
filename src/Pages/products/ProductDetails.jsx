@@ -46,7 +46,7 @@ export default function ProductDetail() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="max-w-7xl mx-auto mt-22 p-6 grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Left - Product Images */}
       <div>
         <div
@@ -84,7 +84,7 @@ export default function ProductDetail() {
       {/* Right - Details */}
       <div>
         <h1 className="text-3xl font-bold mb-3">{product.title}</h1>
-        <p className="text-xl font-semibold text-green-600 mb-4">₹{product.price}</p>
+        <p className="text-xl font-semibold text-[#8B4513] mb-4">₹{product.price}</p>
 
         {/* Rating placeholder */}
         <div className="flex items-center gap-2 mb-4">
@@ -115,7 +115,7 @@ export default function ProductDetail() {
         <div className="flex gap-4 mb-6">
           <button
             onClick={handleAddToCart}
-            className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition"
+            className="bg-[#8B4513] hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition"
           >
             🛒 Add to Cart
           </button>

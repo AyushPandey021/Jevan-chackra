@@ -30,38 +30,40 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/men/55.jpg",
   },
   {
-    name: "Sneha Kapoor",
-    role: "Content Creator",
+    name: "Arjun Singh",
+    role: "Entrepreneur",
     message:
-      "The overall experience was absolutely wonderful! Will definitely use it again.",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+      "From design to execution, everything is top-notch. I’d recommend it to anyone.",
+    image: "https://randomuser.me/api/portraits/men/55.jpg",
   },
 ];
 
 export default function TestimonialGrid() {
   return (
-    <div className="bg-gray-50 py-12">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8 flex justify-center">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-extrabold text-center text-[#5C4033] mb-12 sm:text-4xl">
           What Our Clients Say
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center transition transform hover:scale-105 hover:shadow-xl duration-300"
+              className="bg-[#fff8f0] border border-[#d7b186] rounded-3xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
             >
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-20 h-20 rounded-full object-cover border-4 border-indigo-500 shadow-md mb-4"
+                className="w-20 h-20 rounded-full object-cover border-4 border-[#a97456] shadow-md mb-5"
               />
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-lg font-semibold text-[#5C4033]">
                 {testimonial.name}
               </h3>
-              <p className="text-sm text-indigo-500">{testimonial.role}</p>
-              <p className="text-gray-600 mt-3 text-sm">{testimonial.message}</p>
+              <p className="text-sm text-[#9c7f53] italic">{testimonial.role}</p>
+              <p className="text-gray-700 mt-4 text-sm leading-relaxed">
+                "{testimonial.message}"
+              </p>
             </div>
           ))}
         </div>

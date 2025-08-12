@@ -67,7 +67,7 @@ const Gallery = () => {
 
             <Link
               to={service.link}
-              className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black font-semibold px-4 py-2 rounded shadow hover:bg-black hover:text-white transition duration-300"
+              className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-[#8B4513] font-bold px-4 py-2 rounded shadow hover:bg-black hover:text-white transition duration-300"
             >
               {service.label}
             </Link>

@@ -60,7 +60,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen py-6 px-3">
+    <div className="bg-gray-50 min-h-screen mt-20 py-6 px-3">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* Left: Shipping Form */}

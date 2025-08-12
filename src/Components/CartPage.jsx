@@ -123,7 +123,7 @@ export default function CartPage() {
 
           {/* Checkout Button */}
           <Link
-            to="/checkout"
+            to="/checkoutpage"
             className="block mt-6 bg-black text-white text-center py-3 rounded-full hover:bg-gray-800 transition"
           >
             Go to Checkout →

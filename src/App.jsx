@@ -48,7 +48,7 @@ function App() {
   }
 
   return (
-    <div className="bg-[#fffff] text-[#973C00] ">
+    <div className="bg-[#fffff] text-[#973C00] overflow-hidden ">
       <ScrollTop />
       <Navbar />
       <Routes>

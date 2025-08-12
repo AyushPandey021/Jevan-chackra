@@ -2,8 +2,9 @@ import React from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import badgeBg from '../../assets/45.png';
-import "../style/animatedBackground.css"; // your glow + rotate animation
+import "../style/animatedBackground.css"; // animation styles
 
+// Stats Data
 const stats = [
   { end: 1000, suffix: '+', label: 'Trusted Clients' },
   { end: 15, suffix: '+', label: 'Years of Experience' },
@@ -16,7 +17,10 @@ const StatsCounter = () => {
 
   return (
     <div className="py-16 text-black" ref={ref}>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 px-4">
+      
+      {/* Grid: 2 columns on mobile, 4 on medium+ */}
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 px-4">
+        
         {stats.map((item, index) => (
           <div
             key={index}
@@ -40,6 +44,7 @@ const StatsCounter = () => {
             </div>
           </div>
         ))}
+
       </div>
     </div>
   );

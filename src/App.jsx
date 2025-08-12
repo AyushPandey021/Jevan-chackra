@@ -48,7 +48,7 @@ function App() {
   }
 
   return (
-    <div className="bg-[#EAC3D0] text-[#973C00]">
+    <div className="bg-[#fffff] text-[#973C00]">
       <ScrollTop />
       <Navbar />
       <Routes>

@@ -7,6 +7,7 @@ import SushmitaAbbi from '../Components/SushmitaAbbi'
 import Youtube from '../Components/ui/YoutubeGallery'
 import TestimonialMarquee from '../Components/ui/TestimonialMarquee'
 import ProductList from '../Components/ui/ProductList'
+import HomePageCard from "../Components/ui/HomePageCard"
 
 const Home = () => {
   return (
@@ -22,7 +23,8 @@ const Home = () => {
       <StatsCounter />
 
       <Gallery />
-      <ProductList/>
+      <HomePageCard/>
+    
 {/* <ProductingCard/> */}
 
       <SushmitaAbbi />

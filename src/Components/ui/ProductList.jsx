@@ -3,7 +3,7 @@ import ProductCard from "./ProductsCard";
 
 export default function ProductList() {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-1 p-24">
       {products.map((p) => (
         <ProductCard key={p.id} product={p} />
       ))}
